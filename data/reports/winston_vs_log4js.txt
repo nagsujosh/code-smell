@@ -1,0 +1,460 @@
+
+====================================================================================================
+                               REPOSITORY SIMILARITY ANALYSIS REPORT
+                                Semantic Codebase Graph Engine v1.0
+====================================================================================================
+
+Report Generated: 2025-12-23 19:08:55 UTC
+Pipeline ID: 8b53dff2
+Analysis Type: Repository Comparison
+
+====================================================================================================
+                                         EXECUTIVE SUMMARY
+====================================================================================================
+
+  OVERALL SIMILARITY SCORE: 0.5722 (57.22%)
+
+  Interpretation: Moderate Similarity - Some common patterns and components
+
+  Component Scores:
+    Structural Similarity: 0.6954 (69.54%)
+    Semantic Similarity:   0.4901 (49.01%)
+
+  Overall         [############################......................]  57.22%
+  Structural      [##################################................]  69.54%
+  Semantic        [########################..........................]  49.01%
+
+----------------------------------------------------------------------------------------------------
+REPOSITORIES ANALYZED
+----------------------------------------------------------------------------------------------------
+
+  Source Repository: https://github.com/winstonjs/winston
+  Target Repository: https://github.com/log4js-node/log4js-node
+
+----------------------------------------------------------------------------------------------------
+OVERVIEW
+----------------------------------------------------------------------------------------------------
+
+  Overall Score: 0.5722 (57.22%)
+  Interpretation: Moderate Similarity - Some common patterns and components
+  Computed At: 2025-12-23T19:08:55.508108
+  Source Repository: winston
+  Target Repository: log4js-node
+  Weights:
+    Structural: 0.4000 (40.00%)
+    Semantic: 0.6000 (60.00%)
+  Score Formula: (0.40 * structural) + (0.60 * semantic)
+  Computed Score: (0.40 * 0.6954) + (0.60 * 0.4901) = 0.5722
+  Note: The overall similarity score of 57.22% is computed from structural similarity (69.54%) weighted at 40% and semantic similarity (49.01%) weighted at 60%. Low dependency overlap (8.93%) indicates different technology choices. Highest semantic match: 'file-create-dir.test.js' and 'noLogFilter-test.js' (99.43%).
+
+
+----------------------------------------------------------------------------------------------------
+STRUCTURAL SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.6954 (69.54%)
+  Components:
+    Node Type Similarity: 0.9764 (97.64%)
+    Edge Type Similarity: 0.9804 (98.04%)
+    Dependency Overlap: 0.0893 (8.93%)
+    Topology Similarity: 0.9138 (91.38%)
+  Component Weights:
+    Node Type: 0.2500 (25.00%)
+    Edge Type: 0.2000 (20.00%)
+    Dependency: 0.3000 (30.00%)
+    Topology: 0.2500 (25.00%)
+  Size Ratio: 0.8281 (82.81%)
+  Graph Comparison:
+    Source Nodes: 221
+    Source Edges: 220
+    Target Nodes: 183
+    Target Edges: 182
+  Note: Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.
+  Note: Size ratio of 82.81% indicates similar repository sizes.
+
+
+  Common Dependencies
+  -------------------
+
+    Dependencies: (5 items)
+      - http
+      - fs
+      - console
+      - child_process
+      - os
+    Count: 5
+
+
+  Node Type Distribution
+  ----------------------
+
+    Common Types: (4 items)
+      - repository
+      - file
+      - class
+      - external_dependency
+    Source Distribution:
+      Repository: 1
+      File: 58
+      Class: 24
+      External Dependency: 138
+    Target Distribution:
+      Repository: 1
+      File: 46
+      Class: 41
+      External Dependency: 95
+
+
+  Edge Type Distribution
+  ----------------------
+
+    Common Types: (2 items)
+      - contains
+      - imports
+    Source Distribution:
+      Contains: 82
+      Imports: 139
+    Target Distribution:
+      Contains: 87
+      Imports: 97
+
+
+----------------------------------------------------------------------------------------------------
+SEMANTIC SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.4901 (49.01%)
+  Components:
+    Function Similarity: 0.0000 (0.00%)
+    Class Similarity: 0.9761 (97.61%)
+    File Similarity: 0.9863 (98.63%)
+  Component Weights:
+    Function: 0.5000 (50.00%)
+    Class: 0.3000 (30.00%)
+    File: 0.2000 (20.00%)
+  Total Matches: 70
+  Matches By Type:
+    Function Matches: 0
+    Class Matches: 24
+    File Matches: 46
+  Entity Counts:
+    Source Functions: 0
+    Target Functions: 0
+    Source Classes: 24
+    Target Classes: 41
+  Note: Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).
+  Note: Aggregation method: weighted_average
+  Note: Total matched pairs above threshold: 70
+
+
+  Top Function Matches
+  --------------------
+
+    Matches: (0 items)
+
+
+  Top Class Matches
+  -----------------
+
+    Matches: (15 items)
+      [1] source: AbstractConfigSetColors, target: CustomAppender, similarity: 0.9913
+      [2] source: HttpTransportInstance, target: LoggingEvent, similarity: 0.9897
+      [3] source: LeveledLogMethod, target: Log4js, similarity: 0.9894
+      [4] source: LoggerOptions, target: Logger, similarity: 0.9894
+      [5] source: LogEntry, target: CustomLayout, similarity: 0.9886
+      [6] source: StreamTransportOptions, target: StandardOutputAppender, similarity: 0.9872
+      [7] source: ConsoleTransportInstance, target: StandardErrorAppender, similarity: 0.9861
+      [8] source: StreamTransportInstance, target: AppenderModule, similarity: 0.9860
+      [9] source: AbstractConfigSetLevels, target: MessagePassThroughLayout, similarity: 0.9856
+      [10] source: FileTransportInstance, target: CallStack, similarity: 0.9851
+      [11] source: LogMethod, target: Recording, similarity: 0.9845
+      [12] source: HttpTransportOptions, target: Configuration, similarity: 0.9814
+      [13] source: ConsoleTransportOptions, target: Logger, similarity: 0.9789
+      [14] source: FileTransportOptions, target: FileAppender, similarity: 0.9773
+      [15] source: CliConfigSetLevels, target: LayoutsParam, similarity: 0.9770
+
+
+  Top File Matches
+  ----------------
+
+    Matches: (15 items)
+      [1] source: file-create-dir.test.js, target: noLogFilter-test.js, similarity: 0.9943
+      [2] source: stream.test.js, target: newLevel-test.js, similarity: 0.9937
+      [3] source: file-maxsize.js, target: recordingAppender-test.js, similarity: 0.9936
+      [4] source: simple-stream.js, target: categoryFilter-test.js, similarity: 0.9934
+      [5] source: custom-levels-colors.js, target: date-file-rolling.js, similarity: 0.9933
+      [6] source: jest.config.js, target: flush-on-exit.js, similarity: 0.9929
+      [7] source: rejection-handler.test.js, target: sandbox-coverage.js, similarity: 0.9925
+      [8] source: json.js, target: passenger-test.js, similarity: 0.9924
+      [9] source: quick-start.js, target: patternLayout-tokens.js, similarity: 0.9919
+      [10] source: handler-tests.js, target: stdoutAppender-test.js, similarity: 0.9919
+      [11] source: color-message.js, target: fromreadme.js, similarity: 0.9918
+      [12] source: legacy-mixed-transport.js, target: logFaces-appender.js, similarity: 0.9917
+      [13] source: create-file.js, target: levels-before-configure-test.js, similarity: 0.9917
+      [14] source: custom-timestamp.js, target: log-to-files.js, similarity: 0.9917
+      [15] source: format-logger-and-transport.js, target: consoleAppender-test.js, similarity: 0.9916
+
+
+  All Top Semantic Matches
+  ------------------------
+
+    Matches: (25 items)
+      [1] source: file-create-dir.test.js, target: noLogFilter-test.js, similarity: 0.9943, type: file
+      [2] source: stream.test.js, target: newLevel-test.js, similarity: 0.9937, type: file
+      [3] source: file-maxsize.js, target: recordingAppender-test.js, similarity: 0.9936, type: file
+      [4] source: simple-stream.js, target: categoryFilter-test.js, similarity: 0.9934, type: file
+      [5] source: custom-levels-colors.js, target: date-file-rolling.js, similarity: 0.9933, type: file
+      [6] source: jest.config.js, target: flush-on-exit.js, similarity: 0.9929, type: file
+      [7] source: rejection-handler.test.js, target: sandbox-coverage.js, similarity: 0.9925, type: file
+      [8] source: json.js, target: passenger-test.js, similarity: 0.9924, type: file
+      [9] source: quick-start.js, target: patternLayout-tokens.js, similarity: 0.9919, type: file
+      [10] source: handler-tests.js, target: stdoutAppender-test.js, similarity: 0.9919, type: file
+      [11] source: color-message.js, target: fromreadme.js, similarity: 0.9918, type: file
+      [12] source: legacy-mixed-transport.js, target: logFaces-appender.js, similarity: 0.9917, type: file
+      [13] source: create-file.js, target: levels-before-configure-test.js, similarity: 0.9917, type: file
+      [14] source: custom-timestamp.js, target: log-to-files.js, similarity: 0.9917, type: file
+      [15] source: format-logger-and-transport.js, target: consoleAppender-test.js, similarity: 0.9916, type: file
+      [16] source: AbstractConfigSetColors, target: CustomAppender, similarity: 0.9913, type: class
+      [17] source: log-exception.test.js, target: example-connect-logger.js, similarity: 0.9911, type: file
+      [18] source: typescript-definitions.ts, target: stacktrace.js, similarity: 0.9906, type: file
+      [19] source: colorize.js, target: loggly-appender.js, similarity: 0.9906, type: file
+      [20] source: jest.config.integration.js, target: logstashUDP.js, similarity: 0.9906, type: file
+      ... and 5 more items
+
+
+----------------------------------------------------------------------------------------------------
+REPOSITORY STATISTICS
+----------------------------------------------------------------------------------------------------
+
+  Source:
+    Name: winston
+    Files: 113
+    Size Bytes: 684228
+    Size Mb: 0.6500 (65.00%)
+    Languages:
+      Javascript: 79
+      Typescript: 5
+    Primary Language: javascript
+    Nodes: 221
+    Edges: 220
+    Node Types: (4 items)
+      - class
+      - repository
+      - external_dependency
+      - file
+    Edge Types: (2 items)
+      - contains
+      - imports
+  Target:
+    Name: log4js-node
+    Files: 157
+    Size Bytes: 778207
+    Size Mb: 0.7400 (74.00%)
+    Languages:
+      Javascript: 96
+      Typescript: 2
+    Primary Language: javascript
+    Nodes: 183
+    Edges: 182
+    Node Types: (4 items)
+      - class
+      - repository
+      - external_dependency
+      - file
+    Edge Types: (2 items)
+      - contains
+      - imports
+  Comparison:
+    File Ratio: 0.7197 (71.97%)
+    Node Ratio: 0.8281 (82.81%)
+
+----------------------------------------------------------------------------------------------------
+GRAPH TOPOLOGY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Source Graph:
+    Node Count: 221
+    Edge Count: 220
+    Density: 0.0045 (0.45%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 58
+        Class: 24
+        External Dependency: 138
+      Edges:
+        Contains: 82
+        Imports: 139
+  Target Graph:
+    Node Count: 183
+    Edge Count: 182
+    Density: 0.0055 (0.55%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 46
+        Class: 41
+        External Dependency: 95
+      Edges:
+        Contains: 87
+        Imports: 97
+  Topology Similarity: 0.9138 (91.38%)
+  Note: Graph topology reveals the structural organization of the codebase.
+  Note: Higher density indicates more interconnected code components.
+
+
+----------------------------------------------------------------------------------------------------
+DEPENDENCY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Dependency Overlap: 0.0893 (8.93%)
+  Common Dependencies: (5 items)
+    - http
+    - fs
+    - console
+    - child_process
+    - os
+  Common Dependency Count: 5
+  Note: Dependency overlap of 8.93% indicates different technology choices.
+  Note: Common dependencies suggest shared functionality or framework usage.
+
+
+----------------------------------------------------------------------------------------------------
+CODE PATTERN ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  High Similarity Patterns:
+    Count: 70
+    Threshold: 0.9000 (90.00%)
+    Matches: (10 items)
+      [1] source: file-create-dir.test.js, target: noLogFilter-test.js, similarity: 0.9943, type: file
+      [2] source: stream.test.js, target: newLevel-test.js, similarity: 0.9937, type: file
+      [3] source: file-maxsize.js, target: recordingAppender-test.js, similarity: 0.9936, type: file
+      [4] source: simple-stream.js, target: categoryFilter-test.js, similarity: 0.9934, type: file
+      [5] source: custom-levels-colors.js, target: date-file-rolling.js, similarity: 0.9933, type: file
+      [6] source: jest.config.js, target: flush-on-exit.js, similarity: 0.9929, type: file
+      [7] source: rejection-handler.test.js, target: sandbox-coverage.js, similarity: 0.9925, type: file
+      [8] source: json.js, target: passenger-test.js, similarity: 0.9924, type: file
+      [9] source: quick-start.js, target: patternLayout-tokens.js, similarity: 0.9919, type: file
+      [10] source: handler-tests.js, target: stdoutAppender-test.js, similarity: 0.9919, type: file
+  Moderate Similarity Patterns:
+    Count: 0
+    Threshold Range: (2 items)
+      - 0.8
+      - 0.9
+    Matches: (0 items)
+  Note: Found 70 code elements with very high similarity (>=90%).
+  Note: Found 0 code elements with high similarity (80-90%).
+  Note: High similarity patterns may indicate shared code, common idioms, or similar implementations.
+
+
+----------------------------------------------------------------------------------------------------
+METHODOLOGY
+----------------------------------------------------------------------------------------------------
+
+  Approach: Hybrid structural and semantic analysis
+  Pipeline Stages: (7 items)
+    - Repository Ingestion
+    - Language Detection
+    - Static Structure Extraction
+    - Semantic Graph Construction
+    - Embedding Generation
+    - Similarity Analysis
+    - Report Generation
+  Structural Analysis:
+    Description: Compares graph topology, node/edge distributions, and dependency overlap
+    Metrics: (4 items)
+      - Node type distribution similarity (cosine)
+      - Edge type distribution similarity (cosine)
+      - Dependency overlap (Jaccard index)
+      - Topology metrics (density, clustering, depth)
+    Weights:
+      Node Type: 0.2500 (25.00%)
+      Edge Type: 0.2000 (20.00%)
+      Dependency: 0.3000 (30.00%)
+      Topology: 0.2500 (25.00%)
+  Semantic Analysis:
+    Description: Compares code meaning using neural embeddings
+    Encoder: microsoft/codebert-base
+    Embedding Dimension: 768
+    Granularity: (3 items)
+      - function
+      - class
+      - file
+    Matching: Greedy optimal matching with threshold
+    Similarity Threshold: 0.7000 (70.00%)
+    Weights:
+      Function: 0.5000 (50.00%)
+      Class: 0.3000 (30.00%)
+      File: 0.2000 (20.00%)
+  Hybrid Combination:
+    Description: Weighted combination of structural and semantic scores
+    Default Structural Weight: 0.4000 (40.00%)
+    Default Semantic Weight: 0.6000 (60.00%)
+
+----------------------------------------------------------------------------------------------------
+LIMITATIONS AND ASSUMPTIONS
+----------------------------------------------------------------------------------------------------
+
+  Analysis Limitations: (1 items)
+    - This analysis is based on static structure and semantics only; runtime behavior is not considered.
+  General Limitations: (5 items)
+    - Static analysis only - runtime behavior not considered
+    - Variable-level data flow not tracked
+    - Similarity is computed, not semantic equivalence
+    - Cross-language comparison limited by embedding model training
+    - Large repositories may have sampling limitations
+  Assumptions: (5 items)
+    - Code follows standard conventions for the language
+    - File extensions correctly indicate language
+    - Repository structure is representative of codebase organization
+    - Function/class naming reflects purpose
+    - Import statements reflect actual dependencies
+  Score Interpretation:
+    0.9 To 1.0: Very High - Nearly identical codebases
+    0.75 To 0.9: High - Significant overlap, possibly related projects
+    0.5 To 0.75: Moderate - Some common patterns
+    0.25 To 0.5: Low - Few common elements
+    0.0 To 0.25: Very Low - Largely different codebases
+
+----------------------------------------------------------------------------------------------------
+RECOMMENDATIONS
+----------------------------------------------------------------------------------------------------
+
+  Recommendations: (4 items)
+    - Explore the common patterns for potential code reuse
+    - Consider creating shared libraries for common functionality
+    - Document architectural similarities for knowledge transfer
+    - Significant difference between structural and semantic similarity - investigate organizational vs. implementation differences
+  Based On:
+    Overall Score: 0.5722 (57.22%)
+    Structural Score: 0.6954 (69.54%)
+    Semantic Score: 0.4901 (49.01%)
+
+----------------------------------------------------------------------------------------------------
+INTERPRETATION AND KEY INSIGHTS
+----------------------------------------------------------------------------------------------------
+
+  Score Analysis:
+  ----------------------------------------
+  - The repositories show MODERATE similarity
+    This suggests:
+      * Some shared patterns or conventions
+      * Similar technology stack in some areas
+      * Different approaches with some overlap
+
+  Component Analysis:
+  ----------------------------------------
+  - Structural similarity EXCEEDS semantic similarity
+    Implication: Similar organization/architecture but
+    different implementation details or naming conventions
+
+====================================================================================================
+                                           END OF REPORT
+====================================================================================================
+
+This report was generated by the Semantic Codebase Graph Engine.
+For more information, see the project documentation.
+
+Report ID: 8b53dff2
+Generated: 2025-12-23 19:08:55

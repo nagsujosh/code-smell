@@ -1,0 +1,528 @@
+
+====================================================================================================
+                               REPOSITORY SIMILARITY ANALYSIS REPORT
+                                Semantic Codebase Graph Engine v1.0
+====================================================================================================
+
+Report Generated: 2025-12-23 19:06:03 UTC
+Pipeline ID: a19d1d65
+Analysis Type: Repository Comparison
+
+====================================================================================================
+                                         EXECUTIVE SUMMARY
+====================================================================================================
+
+  OVERALL SIMILARITY SCORE: 0.6011 (60.11%)
+
+  Interpretation: Moderate Similarity - Some common patterns and components
+
+  Component Scores:
+    Structural Similarity: 0.5588 (55.88%)
+    Semantic Similarity:   0.6293 (62.93%)
+
+  Overall         [##############################....................]  60.11%
+  Structural      [###########################.......................]  55.88%
+  Semantic        [###############################...................]  62.93%
+
+----------------------------------------------------------------------------------------------------
+REPOSITORIES ANALYZED
+----------------------------------------------------------------------------------------------------
+
+  Source Repository: https://github.com/tiangolo/fastapi
+  Target Repository: https://github.com/pallets/flask
+
+----------------------------------------------------------------------------------------------------
+OVERVIEW
+----------------------------------------------------------------------------------------------------
+
+  Overall Score: 0.6011 (60.11%)
+  Interpretation: Moderate Similarity - Some common patterns and components
+  Computed At: 2025-12-23T19:06:03.842501
+  Source Repository: fastapi
+  Target Repository: flask
+  Weights:
+    Structural: 0.4000 (40.00%)
+    Semantic: 0.6000 (60.00%)
+  Score Formula: (0.40 * structural) + (0.60 * semantic)
+  Computed Score: (0.40 * 0.5588) + (0.60 * 0.6293) = 0.6011
+  Note: The overall similarity score of 60.11% is computed from structural similarity (55.88%) weighted at 40% and semantic similarity (62.93%) weighted at 60%. Note: The repositories differ significantly in size (ratio: 0.14), which may affect comparability. Low dependency overlap (6.60%) indicates different technology choices. Highest semantic match: '__repr__' and '__repr__' (100.00%).
+
+
+----------------------------------------------------------------------------------------------------
+STRUCTURAL SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.5588 (55.88%)
+  Components:
+    Node Type Similarity: 0.9732 (97.32%)
+    Edge Type Similarity: 0.9857 (98.57%)
+    Dependency Overlap: 0.0660 (6.60%)
+    Topology Similarity: 0.3944 (39.44%)
+  Component Weights:
+    Node Type: 0.2500 (25.00%)
+    Edge Type: 0.2000 (20.00%)
+    Dependency: 0.3000 (30.00%)
+    Topology: 0.2500 (25.00%)
+  Size Ratio: 0.1446 (14.46%)
+  Graph Comparison:
+    Source Nodes: 10990
+    Source Edges: 11565
+    Target Nodes: 1589
+    Target Edges: 1818
+  Note: Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.
+  Note: Size ratio of 14.46% indicates significantly different repository sizes.
+
+
+  Common Dependencies
+  -------------------
+
+    Dependencies: (42 items)
+      - functools
+      - main
+      - os
+      - MutableMapping
+      - timezone
+      - cached_property
+      - copy
+      - defaultdict
+      - b64decode
+      - request
+      - contextmanager
+      - ContextVar
+      - io
+      - dataclasses
+      - inspect
+      - b64encode
+      - HTTPException
+      - Template
+      - Response
+      - iscoroutinefunction
+      ... and 22 more items
+    Count: 42
+
+
+  Node Type Distribution
+  ----------------------
+
+    Common Types: (5 items)
+      - class
+      - file
+      - external_dependency
+      - repository
+      - function
+    Source Distribution:
+      Repository: 1
+      File: 1010
+      External Dependency: 4865
+      Function: 4293
+      Class: 821
+    Target Distribution:
+      Repository: 1
+      File: 80
+      External Dependency: 609
+      Function: 829
+      Class: 70
+
+
+  Edge Type Distribution
+  ----------------------
+
+    Common Types: (4 items)
+      - inherits
+      - contains
+      - imports
+      - calls
+    Source Distribution:
+      Contains: 6124
+      Imports: 4865
+      Calls: 466
+      Inherits: 110
+    Target Distribution:
+      Contains: 1004
+      Imports: 615
+      Calls: 212
+      Inherits: 19
+
+
+----------------------------------------------------------------------------------------------------
+SEMANTIC SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.6293 (62.93%)
+  Components:
+    Function Similarity: 0.6835 (68.35%)
+    Class Similarity: 0.5764 (57.64%)
+    File Similarity: 0.5731 (57.31%)
+  Component Weights:
+    Function: 0.5000 (50.00%)
+    Class: 0.3000 (30.00%)
+    File: 0.2000 (20.00%)
+  Total Matches: 979
+  Matches By Type:
+    Function Matches: 829
+    Class Matches: 70
+    File Matches: 80
+  Entity Counts:
+    Source Functions: 4293
+    Target Functions: 829
+    Source Classes: 821
+    Target Classes: 70
+  Note: Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).
+  Note: Aggregation method: weighted_average
+  Note: Total matched pairs above threshold: 979
+
+
+  Top Function Matches
+  --------------------
+
+    Matches: (15 items)
+      [1] source: __repr__, target: __repr__, similarity: 1.0000
+      [2] source: __repr__, target: __repr__, similarity: 1.0000
+      [3] source: test_header_model_with_alias, target: test_normal_environ_completes, similarity: 0.9954
+      [4] source: test_cookie_tracking_id_too_short, target: test_static_url_path, similarity: 0.9949
+      [5] source: test_app_level_dep_scope_request, target: test_view_provide_automatic_options_attr, similarity: 0.9949
+      [6] source: test_redirect_slashes_enabled, target: test_blueprint_with_subdomain, similarity: 0.9945
+      [7] source: read_model, target: create_app, similarity: 0.9942
+      [8] source: test_sync_raise_server_error, target: test_log_view_exception, similarity: 0.9941
+      [9] source: test_incorrect_multipart_installed_form, target: test_subdomain_matching_other_name, similarity: 0.9940
+      [10] source: test_app_level_dep_scope_function, target: test_subdomain_matching_with_ports, similarity: 0.9939
+      [11] source: test_get_http_error, target: test_redirect_no_app, similarity: 0.9938
+      [12] source: test_no_multipart_installed, target: test_enctype_debug_helper, similarity: 0.9937
+      [13] source: test_cookie_param_model_extra, target: test_author_required, similarity: 0.9937
+      [14] source: test_no_multipart_installed_multi_form, target: test_route_decorator_custom_endpoint_with_dots, similarity: 0.9937
+      [15] source: test_cookie_model_with_alias, target: test_static_url_path_with_ending_slash, similarity: 0.9936
+
+
+  Top Class Matches
+  -----------------
+
+    Matches: (15 items)
+      [1] source: OwnerError, target: BlueprintError, similarity: 0.9986
+      [2] source: OwnerError, target: AppError, similarity: 0.9986
+      [3] source: CustomError, target: Custom, similarity: 0.9967
+      [4] source: UploadFile, target: FlaskClient, similarity: 0.9931
+      [5] source: HTTPDigest, target: FlaskGroup, similarity: 0.9918
+      [6] source: UJSONResponse, target: Environment, similarity: 0.9913
+      [7] source: OAuth2, target: Blueprint, similarity: 0.9909
+      [8] source: WebSocketException, target: TestNoImports, similarity: 0.9903
+      [9] source: SecurityScopes, target: SessionInterface, similarity: 0.9903
+      [10] source: HTTPBasicCredentials, target: SecureCookieSession, similarity: 0.9899
+      [11] source: APIWebSocketRoute, target: ConfigAttribute, similarity: 0.9895
+      [12] source: HTTPBearer, target: SecureCookieSessionInterface, similarity: 0.9893
+      [13] source: OpenIdConnect, target: ScriptInfo, similarity: 0.9893
+      [14] source: BackgroundTasks, target: Request, similarity: 0.9892
+      [15] source: OAuth2PasswordRequestForm, target: AppContext, similarity: 0.9891
+
+
+  Top File Matches
+  ----------------
+
+    Matches: (15 items)
+      [1] source: __main__.py, target: __main__.py, similarity: 0.9975
+      [2] source: people.py, target: app.py, similarity: 0.9945
+      [3] source: test_jsonable_encoder.py, target: sessions.py, similarity: 0.9941
+      [4] source: sponsors.py, target: test_cli.py, similarity: 0.9940
+      [5] source: notify_translations.py, target: scaffold.py, similarity: 0.9938
+      [6] source: tutorial001_py39.py, target: test_subclassing.py, similarity: 0.9937
+      [7] source: contributors.py, target: test_basic.py, similarity: 0.9934
+      [8] source: main.py, target: conftest.py, similarity: 0.9932
+      [9] source: test_tutorial001.py, target: blueprints.py, similarity: 0.9931
+      [10] source: test_main.py, target: test_auth.py, similarity: 0.9931
+      [11] source: tutorial008e_py39.py, target: test_factory.py, similarity: 0.9930
+      [12] source: test_tutorial003.py, target: test_json.py, similarity: 0.9929
+      [13] source: tutorial002_an_py39.py, target: views.py, similarity: 0.9927
+      [14] source: models.py, target: globals.py, similarity: 0.9927
+      [15] source: test_dependency_partial.py, target: typing_app_decorators.py, similarity: 0.9924
+
+
+  All Top Semantic Matches
+  ------------------------
+
+    Matches: (25 items)
+      [1] source: __repr__, target: __repr__, similarity: 1.0000, type: function
+      [2] source: __repr__, target: __repr__, similarity: 1.0000, type: function
+      [3] source: OwnerError, target: BlueprintError, similarity: 0.9986, type: class
+      [4] source: OwnerError, target: AppError, similarity: 0.9986, type: class
+      [5] source: __main__.py, target: __main__.py, similarity: 0.9975, type: file
+      [6] source: CustomError, target: Custom, similarity: 0.9967, type: class
+      [7] source: test_header_model_with_alias, target: test_normal_environ_completes, similarity: 0.9954, type: function
+      [8] source: test_cookie_tracking_id_too_short, target: test_static_url_path, similarity: 0.9949, type: function
+      [9] source: test_app_level_dep_scope_request, target: test_view_provide_automatic_options_attr, similarity: 0.9949, type: function
+      [10] source: people.py, target: app.py, similarity: 0.9945, type: file
+      [11] source: test_redirect_slashes_enabled, target: test_blueprint_with_subdomain, similarity: 0.9945, type: function
+      [12] source: read_model, target: create_app, similarity: 0.9942, type: function
+      [13] source: test_jsonable_encoder.py, target: sessions.py, similarity: 0.9941, type: file
+      [14] source: test_sync_raise_server_error, target: test_log_view_exception, similarity: 0.9941, type: function
+      [15] source: sponsors.py, target: test_cli.py, similarity: 0.9940, type: file
+      [16] source: test_incorrect_multipart_installed_form, target: test_subdomain_matching_other_name, similarity: 0.9940, type: function
+      [17] source: test_app_level_dep_scope_function, target: test_subdomain_matching_with_ports, similarity: 0.9939, type: function
+      [18] source: notify_translations.py, target: scaffold.py, similarity: 0.9938, type: file
+      [19] source: test_get_http_error, target: test_redirect_no_app, similarity: 0.9938, type: function
+      [20] source: test_no_multipart_installed, target: test_enctype_debug_helper, similarity: 0.9937, type: function
+      ... and 5 more items
+
+
+----------------------------------------------------------------------------------------------------
+REPOSITORY STATISTICS
+----------------------------------------------------------------------------------------------------
+
+  Source:
+    Name: fastapi
+    Files: 2293
+    Size Bytes: 26896261
+    Size Mb: 25.6500
+    Languages:
+      Python: 1010
+      Javascript: 3
+      Shell: 5
+    Primary Language: python
+    Nodes: 10990
+    Edges: 11565
+    Node Types: (5 items)
+      - class
+      - file
+      - external_dependency
+      - repository
+      - function
+    Edge Types: (4 items)
+      - inherits
+      - contains
+      - imports
+      - calls
+  Target:
+    Name: flask
+    Files: 229
+    Size Bytes: 1498350
+    Size Mb: 1.4300
+    Languages:
+      Python: 80
+      Shell: 1
+      Sql: 2
+    Primary Language: python
+    Nodes: 1589
+    Edges: 1818
+    Node Types: (5 items)
+      - class
+      - file
+      - external_dependency
+      - repository
+      - function
+    Edge Types: (4 items)
+      - inherits
+      - contains
+      - imports
+      - calls
+  Comparison:
+    File Ratio: 0.0999 (9.99%)
+    Node Ratio: 0.1446 (14.46%)
+
+----------------------------------------------------------------------------------------------------
+GRAPH TOPOLOGY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Source Graph:
+    Node Count: 10990
+    Edge Count: 11565
+    Density: 0.0001 (0.01%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 1010
+        External Dependency: 4865
+        Function: 4293
+        Class: 821
+      Edges:
+        Contains: 6124
+        Imports: 4865
+        Calls: 466
+        Inherits: 110
+  Target Graph:
+    Node Count: 1589
+    Edge Count: 1818
+    Density: 0.0007 (0.07%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 80
+        External Dependency: 609
+        Function: 829
+        Class: 70
+      Edges:
+        Contains: 1004
+        Imports: 615
+        Calls: 212
+        Inherits: 19
+  Topology Similarity: 0.3944 (39.44%)
+  Note: Graph topology reveals the structural organization of the codebase.
+  Note: Higher density indicates more interconnected code components.
+
+
+----------------------------------------------------------------------------------------------------
+DEPENDENCY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Dependency Overlap: 0.0660 (6.60%)
+  Common Dependencies: (42 items)
+    - functools
+    - main
+    - os
+    - MutableMapping
+    - timezone
+    - cached_property
+    - copy
+    - defaultdict
+    - b64decode
+    - request
+    - contextmanager
+    - ContextVar
+    - io
+    - dataclasses
+    - inspect
+    - b64encode
+    - HTTPException
+    - Template
+    - Response
+    - iscoroutinefunction
+    ... and 22 more items
+  Common Dependency Count: 42
+  Note: Dependency overlap of 6.60% indicates different technology choices.
+  Note: Common dependencies suggest shared functionality or framework usage.
+
+
+----------------------------------------------------------------------------------------------------
+CODE PATTERN ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  High Similarity Patterns:
+    Count: 979
+    Threshold: 0.9000 (90.00%)
+    Matches: (10 items)
+      [1] source: __repr__, target: __repr__, similarity: 1.0000, type: function
+      [2] source: __repr__, target: __repr__, similarity: 1.0000, type: function
+      [3] source: OwnerError, target: BlueprintError, similarity: 0.9986, type: class
+      [4] source: OwnerError, target: AppError, similarity: 0.9986, type: class
+      [5] source: __main__.py, target: __main__.py, similarity: 0.9975, type: file
+      [6] source: CustomError, target: Custom, similarity: 0.9967, type: class
+      [7] source: test_header_model_with_alias, target: test_normal_environ_completes, similarity: 0.9954, type: function
+      [8] source: test_cookie_tracking_id_too_short, target: test_static_url_path, similarity: 0.9949, type: function
+      [9] source: test_app_level_dep_scope_request, target: test_view_provide_automatic_options_attr, similarity: 0.9949, type: function
+      [10] source: people.py, target: app.py, similarity: 0.9945, type: file
+  Moderate Similarity Patterns:
+    Count: 0
+    Threshold Range: (2 items)
+      - 0.8
+      - 0.9
+    Matches: (0 items)
+  Note: Found 979 code elements with very high similarity (>=90%).
+  Note: Found 0 code elements with high similarity (80-90%).
+  Note: High similarity patterns may indicate shared code, common idioms, or similar implementations.
+
+
+----------------------------------------------------------------------------------------------------
+METHODOLOGY
+----------------------------------------------------------------------------------------------------
+
+  Approach: Hybrid structural and semantic analysis
+  Pipeline Stages: (7 items)
+    - Repository Ingestion
+    - Language Detection
+    - Static Structure Extraction
+    - Semantic Graph Construction
+    - Embedding Generation
+    - Similarity Analysis
+    - Report Generation
+  Structural Analysis:
+    Description: Compares graph topology, node/edge distributions, and dependency overlap
+    Metrics: (4 items)
+      - Node type distribution similarity (cosine)
+      - Edge type distribution similarity (cosine)
+      - Dependency overlap (Jaccard index)
+      - Topology metrics (density, clustering, depth)
+    Weights:
+      Node Type: 0.2500 (25.00%)
+      Edge Type: 0.2000 (20.00%)
+      Dependency: 0.3000 (30.00%)
+      Topology: 0.2500 (25.00%)
+  Semantic Analysis:
+    Description: Compares code meaning using neural embeddings
+    Encoder: microsoft/codebert-base
+    Embedding Dimension: 768
+    Granularity: (3 items)
+      - function
+      - class
+      - file
+    Matching: Greedy optimal matching with threshold
+    Similarity Threshold: 0.7000 (70.00%)
+    Weights:
+      Function: 0.5000 (50.00%)
+      Class: 0.3000 (30.00%)
+      File: 0.2000 (20.00%)
+  Hybrid Combination:
+    Description: Weighted combination of structural and semantic scores
+    Default Structural Weight: 0.4000 (40.00%)
+    Default Semantic Weight: 0.6000 (60.00%)
+
+----------------------------------------------------------------------------------------------------
+LIMITATIONS AND ASSUMPTIONS
+----------------------------------------------------------------------------------------------------
+
+  Analysis Limitations: (1 items)
+    - This analysis is based on static structure and semantics only; runtime behavior is not considered.
+  General Limitations: (5 items)
+    - Static analysis only - runtime behavior not considered
+    - Variable-level data flow not tracked
+    - Similarity is computed, not semantic equivalence
+    - Cross-language comparison limited by embedding model training
+    - Large repositories may have sampling limitations
+  Assumptions: (5 items)
+    - Code follows standard conventions for the language
+    - File extensions correctly indicate language
+    - Repository structure is representative of codebase organization
+    - Function/class naming reflects purpose
+    - Import statements reflect actual dependencies
+  Score Interpretation:
+    0.9 To 1.0: Very High - Nearly identical codebases
+    0.75 To 0.9: High - Significant overlap, possibly related projects
+    0.5 To 0.75: Moderate - Some common patterns
+    0.25 To 0.5: Low - Few common elements
+    0.0 To 0.25: Very Low - Largely different codebases
+
+----------------------------------------------------------------------------------------------------
+RECOMMENDATIONS
+----------------------------------------------------------------------------------------------------
+
+  Recommendations: (3 items)
+    - Explore the common patterns for potential code reuse
+    - Consider creating shared libraries for common functionality
+    - Document architectural similarities for knowledge transfer
+  Based On:
+    Overall Score: 0.6011 (60.11%)
+    Structural Score: 0.5588 (55.88%)
+    Semantic Score: 0.6293 (62.93%)
+
+----------------------------------------------------------------------------------------------------
+INTERPRETATION AND KEY INSIGHTS
+----------------------------------------------------------------------------------------------------
+
+  Score Analysis:
+  ----------------------------------------
+  - The repositories show HIGH similarity
+    This suggests:
+      * Related problem domains
+      * Similar architectural patterns
+      * Possible shared dependencies or frameworks
+
+  Component Analysis:
+  ----------------------------------------
+  - Structural and semantic similarity are BALANCED
+    Both organization and content show similar patterns
+
+====================================================================================================
+                                           END OF REPORT
+====================================================================================================
+
+This report was generated by the Semantic Codebase Graph Engine.
+For more information, see the project documentation.
+
+Report ID: a19d1d65
+Generated: 2025-12-23 19:06:03

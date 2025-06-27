@@ -1,0 +1,412 @@
+
+====================================================================================================
+                               REPOSITORY SIMILARITY ANALYSIS REPORT
+                                Semantic Codebase Graph Engine v1.0
+====================================================================================================
+
+Report Generated: 2025-12-23 19:07:42 UTC
+Pipeline ID: 5181abbd
+Analysis Type: Repository Comparison
+
+====================================================================================================
+                                         EXECUTIVE SUMMARY
+====================================================================================================
+
+  OVERALL SIMILARITY SCORE: 0.3069 (30.69%)
+
+  Interpretation: Low Similarity - Few common elements
+
+  Component Scores:
+    Structural Similarity: 0.5793 (57.93%)
+    Semantic Similarity:   0.1253 (12.53%)
+
+  Overall         [###############...................................]  30.69%
+  Structural      [############################......................]  57.93%
+  Semantic        [######............................................]  12.53%
+
+----------------------------------------------------------------------------------------------------
+REPOSITORIES ANALYZED
+----------------------------------------------------------------------------------------------------
+
+  Source Repository: https://github.com/lodash/lodash
+  Target Repository: https://github.com/jashkenas/underscore
+
+----------------------------------------------------------------------------------------------------
+OVERVIEW
+----------------------------------------------------------------------------------------------------
+
+  Overall Score: 0.3069 (30.69%)
+  Interpretation: Low Similarity - Few common elements
+  Computed At: 2025-12-23T19:07:42.448395
+  Source Repository: lodash
+  Target Repository: underscore
+  Weights:
+    Structural: 0.4000 (40.00%)
+    Semantic: 0.6000 (60.00%)
+  Score Formula: (0.40 * structural) + (0.60 * semantic)
+  Computed Score: (0.40 * 0.5793) + (0.60 * 0.1253) = 0.3069
+  Note: The overall similarity score of 30.69% is computed from structural similarity (57.93%) weighted at 40% and semantic similarity (12.53%) weighted at 60%. Note: The repositories differ significantly in size (ratio: 0.10), which may affect comparability. Low dependency overlap (3.39%) indicates different technology choices. Highest semantic match: 'playwright.config.js' and 'rollup.config.js' (99.05%).
+
+
+----------------------------------------------------------------------------------------------------
+STRUCTURAL SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.5793 (57.93%)
+  Components:
+    Node Type Similarity: 0.9638 (96.38%)
+    Edge Type Similarity: 0.9653 (96.53%)
+    Dependency Overlap: 0.0339 (3.39%)
+    Topology Similarity: 0.5406 (54.06%)
+  Component Weights:
+    Node Type: 0.2500 (25.00%)
+    Edge Type: 0.2000 (20.00%)
+    Dependency: 0.3000 (30.00%)
+    Topology: 0.2500 (25.00%)
+  Size Ratio: 0.1050 (10.50%)
+  Graph Comparison:
+    Source Nodes: 19
+    Source Edges: 18
+    Target Nodes: 181
+    Target Edges: 180
+  Note: Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.
+  Note: Size ratio of 10.50% indicates significantly different repository sizes.
+
+
+  Common Dependencies
+  -------------------
+
+    Dependencies: (2 items)
+      - fs
+      - path
+    Count: 2
+
+
+  Node Type Distribution
+  ----------------------
+
+    Common Types: (3 items)
+      - file
+      - repository
+      - external_dependency
+    Source Distribution:
+      Repository: 1
+      File: 9
+      External Dependency: 9
+    Target Distribution:
+      Repository: 1
+      File: 66
+      External Dependency: 114
+
+
+  Edge Type Distribution
+  ----------------------
+
+    Common Types: (2 items)
+      - contains
+      - imports
+    Source Distribution:
+      Contains: 9
+      Imports: 9
+    Target Distribution:
+      Contains: 66
+      Imports: 115
+
+
+----------------------------------------------------------------------------------------------------
+SEMANTIC SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.1253 (12.53%)
+  Components:
+    Function Similarity: 0.0000 (0.00%)
+    Class Similarity: 0.0000 (0.00%)
+    File Similarity: 0.6264 (62.64%)
+  Component Weights:
+    Function: 0.5000 (50.00%)
+    Class: 0.3000 (30.00%)
+    File: 0.2000 (20.00%)
+  Total Matches: 9
+  Matches By Type:
+    Function Matches: 0
+    Class Matches: 0
+    File Matches: 9
+  Entity Counts:
+    Source Functions: 0
+    Target Functions: 0
+    Source Classes: 0
+    Target Classes: 0
+  Note: Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).
+  Note: Aggregation method: weighted_average
+  Note: Total matched pairs above threshold: 9
+
+
+  Top Function Matches
+  --------------------
+
+    Matches: (0 items)
+
+
+  Top Class Matches
+  -----------------
+
+    Matches: (0 items)
+
+
+  Top File Matches
+  ----------------
+
+    Matches: (9 items)
+      [1] source: playwright.config.js, target: rollup.config.js, similarity: 0.9905
+      [2] source: worker.js, target: delay.js, similarity: 0.9895
+      [3] source: remove.js, target: treeshake.js, similarity: 0.9890
+      [4] source: .markdown-doctest-setup.js, target: rollup.config2.js, similarity: 0.9888
+      [5] source: mapping.js, target: unescape.js, similarity: 0.9844
+      [6] source: playwright-runner.spec.js, target: underscore-array-methods.js, similarity: 0.9821
+      [7] source: placeholder.js, target: _getLength.js, similarity: 0.9815
+      [8] source: _mapping.js, target: isWeakMap.js, similarity: 0.9808
+      [9] source: uglify.options.js, target: pick.js, similarity: 0.9725
+
+
+  All Top Semantic Matches
+  ------------------------
+
+    Matches: (9 items)
+      [1] source: playwright.config.js, target: rollup.config.js, similarity: 0.9905, type: file
+      [2] source: worker.js, target: delay.js, similarity: 0.9895, type: file
+      [3] source: remove.js, target: treeshake.js, similarity: 0.9890, type: file
+      [4] source: .markdown-doctest-setup.js, target: rollup.config2.js, similarity: 0.9888, type: file
+      [5] source: mapping.js, target: unescape.js, similarity: 0.9844, type: file
+      [6] source: playwright-runner.spec.js, target: underscore-array-methods.js, similarity: 0.9821, type: file
+      [7] source: placeholder.js, target: _getLength.js, similarity: 0.9815, type: file
+      [8] source: _mapping.js, target: isWeakMap.js, similarity: 0.9808, type: file
+      [9] source: uglify.options.js, target: pick.js, similarity: 0.9725, type: file
+
+
+----------------------------------------------------------------------------------------------------
+REPOSITORY STATISTICS
+----------------------------------------------------------------------------------------------------
+
+  Source:
+    Name: lodash
+    Files: 64
+    Size Bytes: 2126786
+    Size Mb: 2.0300
+    Languages:
+      Javascript: 27
+    Primary Language: javascript
+    Nodes: 19
+    Edges: 18
+    Node Types: (3 items)
+      - file
+      - repository
+      - external_dependency
+    Edge Types: (2 items)
+      - contains
+      - imports
+  Target:
+    Name: underscore
+    Files: 389
+    Size Bytes: 6941901
+    Size Mb: 6.6200
+    Languages:
+      Javascript: 189
+    Primary Language: javascript
+    Nodes: 181
+    Edges: 180
+    Node Types: (3 items)
+      - file
+      - repository
+      - external_dependency
+    Edge Types: (2 items)
+      - contains
+      - imports
+  Comparison:
+    File Ratio: 0.1645 (16.45%)
+    Node Ratio: 0.1050 (10.50%)
+
+----------------------------------------------------------------------------------------------------
+GRAPH TOPOLOGY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Source Graph:
+    Node Count: 19
+    Edge Count: 18
+    Density: 0.0526 (5.26%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 9
+        External Dependency: 9
+      Edges:
+        Contains: 9
+        Imports: 9
+  Target Graph:
+    Node Count: 181
+    Edge Count: 180
+    Density: 0.0055 (0.55%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 66
+        External Dependency: 114
+      Edges:
+        Contains: 66
+        Imports: 115
+  Topology Similarity: 0.5406 (54.06%)
+  Note: Graph topology reveals the structural organization of the codebase.
+  Note: Higher density indicates more interconnected code components.
+
+
+----------------------------------------------------------------------------------------------------
+DEPENDENCY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Dependency Overlap: 0.0339 (3.39%)
+  Common Dependencies: (2 items)
+    - fs
+    - path
+  Common Dependency Count: 2
+  Note: Dependency overlap of 3.39% indicates different technology choices.
+  Note: Common dependencies suggest shared functionality or framework usage.
+
+
+----------------------------------------------------------------------------------------------------
+CODE PATTERN ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  High Similarity Patterns:
+    Count: 9
+    Threshold: 0.9000 (90.00%)
+    Matches: (9 items)
+      [1] source: playwright.config.js, target: rollup.config.js, similarity: 0.9905, type: file
+      [2] source: worker.js, target: delay.js, similarity: 0.9895, type: file
+      [3] source: remove.js, target: treeshake.js, similarity: 0.9890, type: file
+      [4] source: .markdown-doctest-setup.js, target: rollup.config2.js, similarity: 0.9888, type: file
+      [5] source: mapping.js, target: unescape.js, similarity: 0.9844, type: file
+      [6] source: playwright-runner.spec.js, target: underscore-array-methods.js, similarity: 0.9821, type: file
+      [7] source: placeholder.js, target: _getLength.js, similarity: 0.9815, type: file
+      [8] source: _mapping.js, target: isWeakMap.js, similarity: 0.9808, type: file
+      [9] source: uglify.options.js, target: pick.js, similarity: 0.9725, type: file
+  Moderate Similarity Patterns:
+    Count: 0
+    Threshold Range: (2 items)
+      - 0.8
+      - 0.9
+    Matches: (0 items)
+  Note: Found 9 code elements with very high similarity (>=90%).
+  Note: Found 0 code elements with high similarity (80-90%).
+  Note: High similarity patterns may indicate shared code, common idioms, or similar implementations.
+
+
+----------------------------------------------------------------------------------------------------
+METHODOLOGY
+----------------------------------------------------------------------------------------------------
+
+  Approach: Hybrid structural and semantic analysis
+  Pipeline Stages: (7 items)
+    - Repository Ingestion
+    - Language Detection
+    - Static Structure Extraction
+    - Semantic Graph Construction
+    - Embedding Generation
+    - Similarity Analysis
+    - Report Generation
+  Structural Analysis:
+    Description: Compares graph topology, node/edge distributions, and dependency overlap
+    Metrics: (4 items)
+      - Node type distribution similarity (cosine)
+      - Edge type distribution similarity (cosine)
+      - Dependency overlap (Jaccard index)
+      - Topology metrics (density, clustering, depth)
+    Weights:
+      Node Type: 0.2500 (25.00%)
+      Edge Type: 0.2000 (20.00%)
+      Dependency: 0.3000 (30.00%)
+      Topology: 0.2500 (25.00%)
+  Semantic Analysis:
+    Description: Compares code meaning using neural embeddings
+    Encoder: microsoft/codebert-base
+    Embedding Dimension: 768
+    Granularity: (3 items)
+      - function
+      - class
+      - file
+    Matching: Greedy optimal matching with threshold
+    Similarity Threshold: 0.7000 (70.00%)
+    Weights:
+      Function: 0.5000 (50.00%)
+      Class: 0.3000 (30.00%)
+      File: 0.2000 (20.00%)
+  Hybrid Combination:
+    Description: Weighted combination of structural and semantic scores
+    Default Structural Weight: 0.4000 (40.00%)
+    Default Semantic Weight: 0.6000 (60.00%)
+
+----------------------------------------------------------------------------------------------------
+LIMITATIONS AND ASSUMPTIONS
+----------------------------------------------------------------------------------------------------
+
+  Analysis Limitations: (2 items)
+    - Few entities have embeddings, semantic similarity may be less reliable.
+    - This analysis is based on static structure and semantics only; runtime behavior is not considered.
+  General Limitations: (5 items)
+    - Static analysis only - runtime behavior not considered
+    - Variable-level data flow not tracked
+    - Similarity is computed, not semantic equivalence
+    - Cross-language comparison limited by embedding model training
+    - Large repositories may have sampling limitations
+  Assumptions: (5 items)
+    - Code follows standard conventions for the language
+    - File extensions correctly indicate language
+    - Repository structure is representative of codebase organization
+    - Function/class naming reflects purpose
+    - Import statements reflect actual dependencies
+  Score Interpretation:
+    0.9 To 1.0: Very High - Nearly identical codebases
+    0.75 To 0.9: High - Significant overlap, possibly related projects
+    0.5 To 0.75: Moderate - Some common patterns
+    0.25 To 0.5: Low - Few common elements
+    0.0 To 0.25: Very Low - Largely different codebases
+
+----------------------------------------------------------------------------------------------------
+RECOMMENDATIONS
+----------------------------------------------------------------------------------------------------
+
+  Recommendations: (4 items)
+    - These codebases appear distinct and serve different purposes
+    - Limited opportunity for direct code sharing
+    - May benefit from different architectural approaches
+    - Significant difference between structural and semantic similarity - investigate organizational vs. implementation differences
+  Based On:
+    Overall Score: 0.3069 (30.69%)
+    Structural Score: 0.5793 (57.93%)
+    Semantic Score: 0.1253 (12.53%)
+
+----------------------------------------------------------------------------------------------------
+INTERPRETATION AND KEY INSIGHTS
+----------------------------------------------------------------------------------------------------
+
+  Score Analysis:
+  ----------------------------------------
+  - The repositories show LOW similarity
+    This suggests:
+      * Different problem domains or approaches
+      * Distinct architectural decisions
+      * Limited shared code patterns
+
+  Component Analysis:
+  ----------------------------------------
+  - Structural similarity EXCEEDS semantic similarity
+    Implication: Similar organization/architecture but
+    different implementation details or naming conventions
+
+====================================================================================================
+                                           END OF REPORT
+====================================================================================================
+
+This report was generated by the Semantic Codebase Graph Engine.
+For more information, see the project documentation.
+
+Report ID: 5181abbd
+Generated: 2025-12-23 19:07:42

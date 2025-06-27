@@ -1,0 +1,1261 @@
+{
+  "report_info": {
+    "title": "Repository Similarity Analysis Report",
+    "version": "1.0.0",
+    "schema_version": "v1",
+    "generated_at": "2025-12-23T19:06:03.842654",
+    "pipeline_id": "a19d1d65",
+    "format": "extensive_json"
+  },
+  "repositories": {
+    "source": "https://github.com/tiangolo/fastapi",
+    "target": "https://github.com/pallets/flask"
+  },
+  "executive_summary": {
+    "overall_similarity": {
+      "score": 0.6010968973320788,
+      "percentage": "60.11%",
+      "interpretation": "Moderate Similarity - Some common patterns and components"
+    },
+    "component_scores": {
+      "structural": {
+        "score": 0.5588381545821168,
+        "percentage": "55.88%"
+      },
+      "semantic": {
+        "score": 0.6292693924987202,
+        "percentage": "62.93%"
+      }
+    },
+    "key_findings": [
+      "Moderate similarity suggests some shared patterns and structures"
+    ]
+  },
+  "scores": {
+    "overall": {
+      "value": 0.6010968973320788,
+      "normalized": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    "structural": {
+      "value": 0.5588381545821168,
+      "components": {
+        "node_type_similarity": 0.9731906844300444,
+        "edge_type_similarity": 0.9857021171661592,
+        "dependency_overlap": 0.0660377358490566,
+        "topology_similarity": 0.3943549571466275
+      },
+      "size_ratio": 0.1445859872611465
+    },
+    "semantic": {
+      "value": 0.6292693924987202,
+      "components": {
+        "function_similarity": 0.6834580258131007,
+        "class_similarity": 0.5764010740115744,
+        "file_similarity": 0.5731002869434876
+      },
+      "total_matches": 979
+    }
+  },
+  "analysis_breakdown": {
+    "structural_analysis": {
+      "score": 0.5588381545821168,
+      "components": {
+        "node_type_similarity": 0.9731906844300444,
+        "edge_type_similarity": 0.9857021171661592,
+        "dependency_overlap": 0.0660377358490566,
+        "topology_similarity": 0.3943549571466275
+      },
+      "size_ratio": 0.1445859872611465,
+      "common_dependencies": [
+        "functools",
+        "main",
+        "os",
+        "MutableMapping",
+        "timezone",
+        "cached_property",
+        "copy",
+        "defaultdict",
+        "b64decode",
+        "request",
+        "contextmanager",
+        "ContextVar",
+        "io",
+        "dataclasses",
+        "inspect",
+        "b64encode",
+        "HTTPException",
+        "Template",
+        "Response",
+        "iscoroutinefunction",
+        "datetime",
+        "json",
+        "Headers",
+        "timedelta",
+        "Path",
+        "admin",
+        "types",
+        "annotations",
+        "ModuleType",
+        "Flask",
+        "uuid",
+        "app",
+        "time",
+        "sys",
+        "re",
+        "logging",
+        "partial",
+        "UUID",
+        "importlib",
+        "Request",
+        "warnings",
+        "pytest"
+      ],
+      "common_node_types": [
+        "class",
+        "file",
+        "external_dependency",
+        "repository",
+        "function"
+      ],
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 14.46% indicates significantly different repository sizes."
+      ]
+    },
+    "semantic_analysis": {
+      "score": 0.6292693924987202,
+      "components": {
+        "function_similarity": 0.6834580258131007,
+        "class_similarity": 0.5764010740115744,
+        "file_similarity": 0.5731002869434876
+      },
+      "total_matches": 979,
+      "top_matches": [],
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 979"
+      ]
+    },
+    "repository_comparison": {
+      "source": {
+        "name": "fastapi",
+        "files": 2293,
+        "size_bytes": 26896261,
+        "size_mb": 25.65,
+        "languages": {
+          "python": 1010,
+          "javascript": 3,
+          "shell": 5
+        },
+        "primary_language": "python",
+        "nodes": 10990,
+        "edges": 11565,
+        "node_types": [
+          "class",
+          "file",
+          "external_dependency",
+          "repository",
+          "function"
+        ],
+        "edge_types": [
+          "inherits",
+          "contains",
+          "imports",
+          "calls"
+        ]
+      },
+      "target": {
+        "name": "flask",
+        "files": 229,
+        "size_bytes": 1498350,
+        "size_mb": 1.43,
+        "languages": {
+          "python": 80,
+          "shell": 1,
+          "sql": 2
+        },
+        "primary_language": "python",
+        "nodes": 1589,
+        "edges": 1818,
+        "node_types": [
+          "class",
+          "file",
+          "external_dependency",
+          "repository",
+          "function"
+        ],
+        "edge_types": [
+          "inherits",
+          "contains",
+          "imports",
+          "calls"
+        ]
+      },
+      "comparison": {
+        "file_ratio": 0.09986916703009158,
+        "node_ratio": 0.1445859872611465
+      }
+    }
+  },
+  "detailed_sections": [
+    {
+      "title": "Overview",
+      "content": {
+        "overall_score": 0.6010968973320788,
+        "interpretation": "Moderate Similarity - Some common patterns and components",
+        "computed_at": "2025-12-23T19:06:03.842501",
+        "source_repository": "fastapi",
+        "target_repository": "flask",
+        "weights": {
+          "structural": 0.4,
+          "semantic": 0.6
+        },
+        "score_formula": "(0.40 * structural) + (0.60 * semantic)",
+        "computed_score": "(0.40 * 0.5588) + (0.60 * 0.6293) = 0.6011"
+      },
+      "notes": [
+        "The overall similarity score of 60.11% is computed from structural similarity (55.88%) weighted at 40% and semantic similarity (62.93%) weighted at 60%. Note: The repositories differ significantly in size (ratio: 0.14), which may affect comparability. Low dependency overlap (6.60%) indicates different technology choices. Highest semantic match: '__repr__' and '__repr__' (100.00%)."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Structural Similarity",
+      "content": {
+        "score": 0.5588381545821168,
+        "components": {
+          "node_type_similarity": 0.9731906844300444,
+          "edge_type_similarity": 0.9857021171661592,
+          "dependency_overlap": 0.0660377358490566,
+          "topology_similarity": 0.3943549571466275
+        },
+        "component_weights": {
+          "node_type": 0.25,
+          "edge_type": 0.2,
+          "dependency": 0.3,
+          "topology": 0.25
+        },
+        "size_ratio": 0.1445859872611465,
+        "graph_comparison": {
+          "source_nodes": 10990,
+          "source_edges": 11565,
+          "target_nodes": 1589,
+          "target_edges": 1818
+        }
+      },
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 14.46% indicates significantly different repository sizes."
+      ],
+      "subsections": [
+        {
+          "title": "Common Dependencies",
+          "content": {
+            "dependencies": [
+              "functools",
+              "main",
+              "os",
+              "MutableMapping",
+              "timezone",
+              "cached_property",
+              "copy",
+              "defaultdict",
+              "b64decode",
+              "request",
+              "contextmanager",
+              "ContextVar",
+              "io",
+              "dataclasses",
+              "inspect",
+              "b64encode",
+              "HTTPException",
+              "Template",
+              "Response",
+              "iscoroutinefunction",
+              "datetime",
+              "json",
+              "Headers",
+              "timedelta",
+              "Path",
+              "admin",
+              "types",
+              "annotations",
+              "ModuleType",
+              "Flask",
+              "uuid",
+              "app",
+              "time",
+              "sys",
+              "re",
+              "logging",
+              "partial",
+              "UUID",
+              "importlib",
+              "Request",
+              "warnings",
+              "pytest"
+            ],
+            "count": 42
+          },
+          "notes": []
+        },
+        {
+          "title": "Node Type Distribution",
+          "content": {
+            "common_types": [
+              "class",
+              "file",
+              "external_dependency",
+              "repository",
+              "function"
+            ],
+            "source_distribution": {
+              "repository": 1,
+              "file": 1010,
+              "external_dependency": 4865,
+              "function": 4293,
+              "class": 821
+            },
+            "target_distribution": {
+              "repository": 1,
+              "file": 80,
+              "external_dependency": 609,
+              "function": 829,
+              "class": 70
+            }
+          },
+          "notes": []
+        },
+        {
+          "title": "Edge Type Distribution",
+          "content": {
+            "common_types": [
+              "inherits",
+              "contains",
+              "imports",
+              "calls"
+            ],
+            "source_distribution": {
+              "contains": 6124,
+              "imports": 4865,
+              "calls": 466,
+              "inherits": 110
+            },
+            "target_distribution": {
+              "contains": 1004,
+              "imports": 615,
+              "calls": 212,
+              "inherits": 19
+            }
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Semantic Similarity",
+      "content": {
+        "score": 0.6292693924987202,
+        "components": {
+          "function_similarity": 0.6834580258131007,
+          "class_similarity": 0.5764010740115744,
+          "file_similarity": 0.5731002869434876
+        },
+        "component_weights": {
+          "function": 0.5,
+          "class": 0.3,
+          "file": 0.2
+        },
+        "total_matches": 979,
+        "matches_by_type": {
+          "function_matches": 829,
+          "class_matches": 70,
+          "file_matches": 80
+        },
+        "entity_counts": {
+          "source_functions": 4293,
+          "target_functions": 829,
+          "source_classes": 821,
+          "target_classes": 70
+        }
+      },
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 979"
+      ],
+      "subsections": [
+        {
+          "title": "Top Function Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "__repr__",
+                "target": "__repr__",
+                "similarity": 1.0
+              },
+              {
+                "source": "__repr__",
+                "target": "__repr__",
+                "similarity": 1.0
+              },
+              {
+                "source": "test_header_model_with_alias",
+                "target": "test_normal_environ_completes",
+                "similarity": 0.9953675270080566
+              },
+              {
+                "source": "test_cookie_tracking_id_too_short",
+                "target": "test_static_url_path",
+                "similarity": 0.994948148727417
+              },
+              {
+                "source": "test_app_level_dep_scope_request",
+                "target": "test_view_provide_automatic_options_attr",
+                "similarity": 0.9948620200157166
+              },
+              {
+                "source": "test_redirect_slashes_enabled",
+                "target": "test_blueprint_with_subdomain",
+                "similarity": 0.9945092797279358
+              },
+              {
+                "source": "read_model",
+                "target": "create_app",
+                "similarity": 0.9941595196723938
+              },
+              {
+                "source": "test_sync_raise_server_error",
+                "target": "test_log_view_exception",
+                "similarity": 0.9940573573112488
+              },
+              {
+                "source": "test_incorrect_multipart_installed_form",
+                "target": "test_subdomain_matching_other_name",
+                "similarity": 0.9939707517623901
+              },
+              {
+                "source": "test_app_level_dep_scope_function",
+                "target": "test_subdomain_matching_with_ports",
+                "similarity": 0.9939203262329102
+              },
+              {
+                "source": "test_get_http_error",
+                "target": "test_redirect_no_app",
+                "similarity": 0.9937955737113953
+              },
+              {
+                "source": "test_no_multipart_installed",
+                "target": "test_enctype_debug_helper",
+                "similarity": 0.9937205910682678
+              },
+              {
+                "source": "test_cookie_param_model_extra",
+                "target": "test_author_required",
+                "similarity": 0.9937202334403992
+              },
+              {
+                "source": "test_no_multipart_installed_multi_form",
+                "target": "test_route_decorator_custom_endpoint_with_dots",
+                "similarity": 0.993671178817749
+              },
+              {
+                "source": "test_cookie_model_with_alias",
+                "target": "test_static_url_path_with_ending_slash",
+                "similarity": 0.9936366081237793
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "Top Class Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "OwnerError",
+                "target": "BlueprintError",
+                "similarity": 0.9986304640769958
+              },
+              {
+                "source": "OwnerError",
+                "target": "AppError",
+                "similarity": 0.9986017346382141
+              },
+              {
+                "source": "CustomError",
+                "target": "Custom",
+                "similarity": 0.9966844320297241
+              },
+              {
+                "source": "UploadFile",
+                "target": "FlaskClient",
+                "similarity": 0.9931257963180542
+              },
+              {
+                "source": "HTTPDigest",
+                "target": "FlaskGroup",
+                "similarity": 0.9918085932731628
+              },
+              {
+                "source": "UJSONResponse",
+                "target": "Environment",
+                "similarity": 0.9912582039833069
+              },
+              {
+                "source": "OAuth2",
+                "target": "Blueprint",
+                "similarity": 0.9909107089042664
+              },
+              {
+                "source": "WebSocketException",
+                "target": "TestNoImports",
+                "similarity": 0.9903269410133362
+              },
+              {
+                "source": "SecurityScopes",
+                "target": "SessionInterface",
+                "similarity": 0.9903234839439392
+              },
+              {
+                "source": "HTTPBasicCredentials",
+                "target": "SecureCookieSession",
+                "similarity": 0.9898940920829773
+              },
+              {
+                "source": "APIWebSocketRoute",
+                "target": "ConfigAttribute",
+                "similarity": 0.9895457029342651
+              },
+              {
+                "source": "HTTPBearer",
+                "target": "SecureCookieSessionInterface",
+                "similarity": 0.9893162846565247
+              },
+              {
+                "source": "OpenIdConnect",
+                "target": "ScriptInfo",
+                "similarity": 0.9892773032188416
+              },
+              {
+                "source": "BackgroundTasks",
+                "target": "Request",
+                "similarity": 0.9892452955245972
+              },
+              {
+                "source": "OAuth2PasswordRequestForm",
+                "target": "AppContext",
+                "similarity": 0.9891427755355835
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "Top File Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "__main__.py",
+                "target": "__main__.py",
+                "similarity": 0.9974661469459534
+              },
+              {
+                "source": "people.py",
+                "target": "app.py",
+                "similarity": 0.9945310950279236
+              },
+              {
+                "source": "test_jsonable_encoder.py",
+                "target": "sessions.py",
+                "similarity": 0.994070827960968
+              },
+              {
+                "source": "sponsors.py",
+                "target": "test_cli.py",
+                "similarity": 0.9939767122268677
+              },
+              {
+                "source": "notify_translations.py",
+                "target": "scaffold.py",
+                "similarity": 0.9938352704048157
+              },
+              {
+                "source": "tutorial001_py39.py",
+                "target": "test_subclassing.py",
+                "similarity": 0.9936940670013428
+              },
+              {
+                "source": "contributors.py",
+                "target": "test_basic.py",
+                "similarity": 0.9934105277061462
+              },
+              {
+                "source": "main.py",
+                "target": "conftest.py",
+                "similarity": 0.9931533932685852
+              },
+              {
+                "source": "test_tutorial001.py",
+                "target": "blueprints.py",
+                "similarity": 0.9931399822235107
+              },
+              {
+                "source": "test_main.py",
+                "target": "test_auth.py",
+                "similarity": 0.993116021156311
+              },
+              {
+                "source": "tutorial008e_py39.py",
+                "target": "test_factory.py",
+                "similarity": 0.9929607510566711
+              },
+              {
+                "source": "test_tutorial003.py",
+                "target": "test_json.py",
+                "similarity": 0.9929054379463196
+              },
+              {
+                "source": "tutorial002_an_py39.py",
+                "target": "views.py",
+                "similarity": 0.9927030801773071
+              },
+              {
+                "source": "models.py",
+                "target": "globals.py",
+                "similarity": 0.9926701188087463
+              },
+              {
+                "source": "test_dependency_partial.py",
+                "target": "typing_app_decorators.py",
+                "similarity": 0.9923765659332275
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "All Top Semantic Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "__repr__",
+                "target": "__repr__",
+                "similarity": 1.0,
+                "type": "function"
+              },
+              {
+                "source": "__repr__",
+                "target": "__repr__",
+                "similarity": 1.0,
+                "type": "function"
+              },
+              {
+                "source": "OwnerError",
+                "target": "BlueprintError",
+                "similarity": 0.9986304640769958,
+                "type": "class"
+              },
+              {
+                "source": "OwnerError",
+                "target": "AppError",
+                "similarity": 0.9986017346382141,
+                "type": "class"
+              },
+              {
+                "source": "__main__.py",
+                "target": "__main__.py",
+                "similarity": 0.9974661469459534,
+                "type": "file"
+              },
+              {
+                "source": "CustomError",
+                "target": "Custom",
+                "similarity": 0.9966844320297241,
+                "type": "class"
+              },
+              {
+                "source": "test_header_model_with_alias",
+                "target": "test_normal_environ_completes",
+                "similarity": 0.9953675270080566,
+                "type": "function"
+              },
+              {
+                "source": "test_cookie_tracking_id_too_short",
+                "target": "test_static_url_path",
+                "similarity": 0.994948148727417,
+                "type": "function"
+              },
+              {
+                "source": "test_app_level_dep_scope_request",
+                "target": "test_view_provide_automatic_options_attr",
+                "similarity": 0.9948620200157166,
+                "type": "function"
+              },
+              {
+                "source": "people.py",
+                "target": "app.py",
+                "similarity": 0.9945310950279236,
+                "type": "file"
+              },
+              {
+                "source": "test_redirect_slashes_enabled",
+                "target": "test_blueprint_with_subdomain",
+                "similarity": 0.9945092797279358,
+                "type": "function"
+              },
+              {
+                "source": "read_model",
+                "target": "create_app",
+                "similarity": 0.9941595196723938,
+                "type": "function"
+              },
+              {
+                "source": "test_jsonable_encoder.py",
+                "target": "sessions.py",
+                "similarity": 0.994070827960968,
+                "type": "file"
+              },
+              {
+                "source": "test_sync_raise_server_error",
+                "target": "test_log_view_exception",
+                "similarity": 0.9940573573112488,
+                "type": "function"
+              },
+              {
+                "source": "sponsors.py",
+                "target": "test_cli.py",
+                "similarity": 0.9939767122268677,
+                "type": "file"
+              },
+              {
+                "source": "test_incorrect_multipart_installed_form",
+                "target": "test_subdomain_matching_other_name",
+                "similarity": 0.9939707517623901,
+                "type": "function"
+              },
+              {
+                "source": "test_app_level_dep_scope_function",
+                "target": "test_subdomain_matching_with_ports",
+                "similarity": 0.9939203262329102,
+                "type": "function"
+              },
+              {
+                "source": "notify_translations.py",
+                "target": "scaffold.py",
+                "similarity": 0.9938352704048157,
+                "type": "file"
+              },
+              {
+                "source": "test_get_http_error",
+                "target": "test_redirect_no_app",
+                "similarity": 0.9937955737113953,
+                "type": "function"
+              },
+              {
+                "source": "test_no_multipart_installed",
+                "target": "test_enctype_debug_helper",
+                "similarity": 0.9937205910682678,
+                "type": "function"
+              },
+              {
+                "source": "test_cookie_param_model_extra",
+                "target": "test_author_required",
+                "similarity": 0.9937202334403992,
+                "type": "function"
+              },
+              {
+                "source": "tutorial001_py39.py",
+                "target": "test_subclassing.py",
+                "similarity": 0.9936940670013428,
+                "type": "file"
+              },
+              {
+                "source": "test_no_multipart_installed_multi_form",
+                "target": "test_route_decorator_custom_endpoint_with_dots",
+                "similarity": 0.993671178817749,
+                "type": "function"
+              },
+              {
+                "source": "test_cookie_model_with_alias",
+                "target": "test_static_url_path_with_ending_slash",
+                "similarity": 0.9936366081237793,
+                "type": "function"
+              },
+              {
+                "source": "test_redirect_slashes_disabled",
+                "target": "test_template_test_with_template",
+                "similarity": 0.9936278462409973,
+                "type": "function"
+              }
+            ]
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Repository Statistics",
+      "content": {
+        "source": {
+          "name": "fastapi",
+          "files": 2293,
+          "size_bytes": 26896261,
+          "size_mb": 25.65,
+          "languages": {
+            "python": 1010,
+            "javascript": 3,
+            "shell": 5
+          },
+          "primary_language": "python",
+          "nodes": 10990,
+          "edges": 11565,
+          "node_types": [
+            "class",
+            "file",
+            "external_dependency",
+            "repository",
+            "function"
+          ],
+          "edge_types": [
+            "inherits",
+            "contains",
+            "imports",
+            "calls"
+          ]
+        },
+        "target": {
+          "name": "flask",
+          "files": 229,
+          "size_bytes": 1498350,
+          "size_mb": 1.43,
+          "languages": {
+            "python": 80,
+            "shell": 1,
+            "sql": 2
+          },
+          "primary_language": "python",
+          "nodes": 1589,
+          "edges": 1818,
+          "node_types": [
+            "class",
+            "file",
+            "external_dependency",
+            "repository",
+            "function"
+          ],
+          "edge_types": [
+            "inherits",
+            "contains",
+            "imports",
+            "calls"
+          ]
+        },
+        "comparison": {
+          "file_ratio": 0.09986916703009158,
+          "node_ratio": 0.1445859872611465
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Graph Topology Analysis",
+      "content": {
+        "source_graph": {
+          "node_count": 10990,
+          "edge_count": 11565,
+          "density": 9.576124225805755e-05,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 1010,
+              "external_dependency": 4865,
+              "function": 4293,
+              "class": 821
+            },
+            "edges": {
+              "contains": 6124,
+              "imports": 4865,
+              "calls": 466,
+              "inherits": 110
+            }
+          }
+        },
+        "target_graph": {
+          "node_count": 1589,
+          "edge_count": 1818,
+          "density": 0.0007204759421273142,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 80,
+              "external_dependency": 609,
+              "function": 829,
+              "class": 70
+            },
+            "edges": {
+              "contains": 1004,
+              "imports": 615,
+              "calls": 212,
+              "inherits": 19
+            }
+          }
+        },
+        "topology_similarity": 0.3943549571466275
+      },
+      "notes": [
+        "Graph topology reveals the structural organization of the codebase.",
+        "Higher density indicates more interconnected code components."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Dependency Analysis",
+      "content": {
+        "dependency_overlap": 0.0660377358490566,
+        "common_dependencies": [
+          "functools",
+          "main",
+          "os",
+          "MutableMapping",
+          "timezone",
+          "cached_property",
+          "copy",
+          "defaultdict",
+          "b64decode",
+          "request",
+          "contextmanager",
+          "ContextVar",
+          "io",
+          "dataclasses",
+          "inspect",
+          "b64encode",
+          "HTTPException",
+          "Template",
+          "Response",
+          "iscoroutinefunction",
+          "datetime",
+          "json",
+          "Headers",
+          "timedelta",
+          "Path",
+          "admin",
+          "types",
+          "annotations",
+          "ModuleType",
+          "Flask",
+          "uuid",
+          "app",
+          "time",
+          "sys",
+          "re",
+          "logging",
+          "partial",
+          "UUID",
+          "importlib",
+          "Request",
+          "warnings",
+          "pytest"
+        ],
+        "common_dependency_count": 42
+      },
+      "notes": [
+        "Dependency overlap of 6.60% indicates different technology choices.",
+        "Common dependencies suggest shared functionality or framework usage."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Code Pattern Analysis",
+      "content": {
+        "high_similarity_patterns": {
+          "count": 979,
+          "threshold": 0.9,
+          "matches": [
+            {
+              "source": "__repr__",
+              "target": "__repr__",
+              "similarity": 1.0,
+              "type": "function"
+            },
+            {
+              "source": "__repr__",
+              "target": "__repr__",
+              "similarity": 1.0,
+              "type": "function"
+            },
+            {
+              "source": "OwnerError",
+              "target": "BlueprintError",
+              "similarity": 0.9986304640769958,
+              "type": "class"
+            },
+            {
+              "source": "OwnerError",
+              "target": "AppError",
+              "similarity": 0.9986017346382141,
+              "type": "class"
+            },
+            {
+              "source": "__main__.py",
+              "target": "__main__.py",
+              "similarity": 0.9974661469459534,
+              "type": "file"
+            },
+            {
+              "source": "CustomError",
+              "target": "Custom",
+              "similarity": 0.9966844320297241,
+              "type": "class"
+            },
+            {
+              "source": "test_header_model_with_alias",
+              "target": "test_normal_environ_completes",
+              "similarity": 0.9953675270080566,
+              "type": "function"
+            },
+            {
+              "source": "test_cookie_tracking_id_too_short",
+              "target": "test_static_url_path",
+              "similarity": 0.994948148727417,
+              "type": "function"
+            },
+            {
+              "source": "test_app_level_dep_scope_request",
+              "target": "test_view_provide_automatic_options_attr",
+              "similarity": 0.9948620200157166,
+              "type": "function"
+            },
+            {
+              "source": "people.py",
+              "target": "app.py",
+              "similarity": 0.9945310950279236,
+              "type": "file"
+            }
+          ]
+        },
+        "moderate_similarity_patterns": {
+          "count": 0,
+          "threshold_range": [
+            0.8,
+            0.9
+          ],
+          "matches": []
+        }
+      },
+      "notes": [
+        "Found 979 code elements with very high similarity (>=90%).",
+        "Found 0 code elements with high similarity (80-90%).",
+        "High similarity patterns may indicate shared code, common idioms, or similar implementations."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Methodology",
+      "content": {
+        "approach": "Hybrid structural and semantic analysis",
+        "pipeline_stages": [
+          "Repository Ingestion",
+          "Language Detection",
+          "Static Structure Extraction",
+          "Semantic Graph Construction",
+          "Embedding Generation",
+          "Similarity Analysis",
+          "Report Generation"
+        ],
+        "structural_analysis": {
+          "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+          "metrics": [
+            "Node type distribution similarity (cosine)",
+            "Edge type distribution similarity (cosine)",
+            "Dependency overlap (Jaccard index)",
+            "Topology metrics (density, clustering, depth)"
+          ],
+          "weights": {
+            "node_type": 0.25,
+            "edge_type": 0.2,
+            "dependency": 0.3,
+            "topology": 0.25
+          }
+        },
+        "semantic_analysis": {
+          "description": "Compares code meaning using neural embeddings",
+          "encoder": "microsoft/codebert-base",
+          "embedding_dimension": 768,
+          "granularity": [
+            "function",
+            "class",
+            "file"
+          ],
+          "matching": "Greedy optimal matching with threshold",
+          "similarity_threshold": 0.7,
+          "weights": {
+            "function": 0.5,
+            "class": 0.3,
+            "file": 0.2
+          }
+        },
+        "hybrid_combination": {
+          "description": "Weighted combination of structural and semantic scores",
+          "default_structural_weight": 0.4,
+          "default_semantic_weight": 0.6
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Limitations and Assumptions",
+      "content": {
+        "analysis_limitations": [
+          "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+        ],
+        "general_limitations": [
+          "Static analysis only - runtime behavior not considered",
+          "Variable-level data flow not tracked",
+          "Similarity is computed, not semantic equivalence",
+          "Cross-language comparison limited by embedding model training",
+          "Large repositories may have sampling limitations"
+        ],
+        "assumptions": [
+          "Code follows standard conventions for the language",
+          "File extensions correctly indicate language",
+          "Repository structure is representative of codebase organization",
+          "Function/class naming reflects purpose",
+          "Import statements reflect actual dependencies"
+        ],
+        "score_interpretation": {
+          "0.9_to_1.0": "Very High - Nearly identical codebases",
+          "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+          "0.5_to_0.75": "Moderate - Some common patterns",
+          "0.25_to_0.5": "Low - Few common elements",
+          "0.0_to_0.25": "Very Low - Largely different codebases"
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Recommendations",
+      "content": {
+        "recommendations": [
+          "Explore the common patterns for potential code reuse",
+          "Consider creating shared libraries for common functionality",
+          "Document architectural similarities for knowledge transfer"
+        ],
+        "based_on": {
+          "overall_score": 0.6010968973320788,
+          "structural_score": 0.5588381545821168,
+          "semantic_score": 0.6292693924987202
+        }
+      },
+      "notes": [],
+      "subsections": []
+    }
+  ],
+  "methodology": {
+    "approach": "Hybrid structural and semantic analysis",
+    "pipeline_stages": [
+      "Repository Ingestion",
+      "Language Detection",
+      "Static Structure Extraction",
+      "Semantic Graph Construction",
+      "Embedding Generation",
+      "Similarity Analysis",
+      "Report Generation"
+    ],
+    "structural_analysis": {
+      "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+      "metrics": [
+        "Node type distribution similarity (cosine)",
+        "Edge type distribution similarity (cosine)",
+        "Dependency overlap (Jaccard index)",
+        "Topology metrics (density, clustering, depth)"
+      ],
+      "weights": {
+        "node_type": 0.25,
+        "edge_type": 0.2,
+        "dependency": 0.3,
+        "topology": 0.25
+      }
+    },
+    "semantic_analysis": {
+      "description": "Compares code meaning using neural embeddings",
+      "encoder": "microsoft/codebert-base",
+      "embedding_dimension": 768,
+      "granularity": [
+        "function",
+        "class",
+        "file"
+      ],
+      "matching": "Greedy optimal matching with threshold",
+      "similarity_threshold": 0.7,
+      "weights": {
+        "function": 0.5,
+        "class": 0.3,
+        "file": 0.2
+      }
+    },
+    "hybrid_combination": {
+      "description": "Weighted combination of structural and semantic scores",
+      "default_structural_weight": 0.4,
+      "default_semantic_weight": 0.6
+    }
+  },
+  "limitations": {
+    "analysis_limitations": [
+      "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+    ],
+    "general_limitations": [
+      "Static analysis only - runtime behavior not considered",
+      "Variable-level data flow not tracked",
+      "Similarity is computed, not semantic equivalence",
+      "Cross-language comparison limited by embedding model training",
+      "Large repositories may have sampling limitations"
+    ],
+    "assumptions": [
+      "Code follows standard conventions for the language",
+      "File extensions correctly indicate language",
+      "Repository structure is representative of codebase organization",
+      "Function/class naming reflects purpose",
+      "Import statements reflect actual dependencies"
+    ],
+    "score_interpretation": {
+      "0.9_to_1.0": "Very High - Nearly identical codebases",
+      "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+      "0.5_to_0.75": "Moderate - Some common patterns",
+      "0.25_to_0.5": "Low - Few common elements",
+      "0.0_to_0.25": "Very Low - Largely different codebases"
+    }
+  },
+  "raw_data": {
+    "summary": {
+      "overall_similarity": 0.6010968973320788,
+      "structural_similarity": 0.5588381545821168,
+      "semantic_similarity": 0.6292693924987202,
+      "interpretation": "Moderate Similarity - Some common patterns and components"
+    },
+    "metadata": {
+      "pipeline_stages": [
+        "ingestion",
+        "analysis",
+        "graph_construction",
+        "embedding",
+        "storage",
+        "similarity",
+        "reporting"
+      ],
+      "config": {
+        "structural_weight": 0.4,
+        "semantic_weight": 0.6
+      },
+      "analysis_timestamp": "2025-12-23T19:06:03.844358",
+      "engine_version": "1.0.0"
+    }
+  }
+}

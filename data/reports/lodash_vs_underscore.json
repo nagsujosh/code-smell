@@ -1,0 +1,815 @@
+{
+  "report_info": {
+    "title": "Repository Similarity Analysis Report",
+    "version": "1.0.0",
+    "schema_version": "v1",
+    "generated_at": "2025-12-23T19:07:42.448501",
+    "pipeline_id": "5181abbd",
+    "format": "extensive_json"
+  },
+  "repositories": {
+    "source": "https://github.com/lodash/lodash",
+    "target": "https://github.com/jashkenas/underscore"
+  },
+  "executive_summary": {
+    "overall_similarity": {
+      "score": 0.3069030152187003,
+      "percentage": "30.69%",
+      "interpretation": "Low Similarity - Few common elements"
+    },
+    "component_scores": {
+      "structural": {
+        "score": 0.5793397185178819,
+        "percentage": "57.93%"
+      },
+      "semantic": {
+        "score": 0.12527854635257915,
+        "percentage": "12.53%"
+      }
+    },
+    "key_findings": [
+      "Low similarity indicates distinct codebases with different approaches",
+      "Structural similarity exceeds semantic similarity - similar organization but different implementations"
+    ]
+  },
+  "scores": {
+    "overall": {
+      "value": 0.3069030152187003,
+      "normalized": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    "structural": {
+      "value": 0.5793397185178819,
+      "components": {
+        "node_type_similarity": 0.9638333052270062,
+        "edge_type_similarity": 0.965254400200851,
+        "dependency_overlap": 0.03389830508474576,
+        "topology_similarity": 0.5406440825821459
+      },
+      "size_ratio": 0.10497237569060773
+    },
+    "semantic": {
+      "value": 0.12527854635257915,
+      "components": {
+        "function_similarity": 0.0,
+        "class_similarity": 0.0,
+        "file_similarity": 0.6263927317628957
+      },
+      "total_matches": 9
+    }
+  },
+  "analysis_breakdown": {
+    "structural_analysis": {
+      "score": 0.5793397185178819,
+      "components": {
+        "node_type_similarity": 0.9638333052270062,
+        "edge_type_similarity": 0.965254400200851,
+        "dependency_overlap": 0.03389830508474576,
+        "topology_similarity": 0.5406440825821459
+      },
+      "size_ratio": 0.10497237569060773,
+      "common_dependencies": [
+        "fs",
+        "path"
+      ],
+      "common_node_types": [
+        "file",
+        "repository",
+        "external_dependency"
+      ],
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 10.50% indicates significantly different repository sizes."
+      ]
+    },
+    "semantic_analysis": {
+      "score": 0.12527854635257915,
+      "components": {
+        "function_similarity": 0.0,
+        "class_similarity": 0.0,
+        "file_similarity": 0.6263927317628957
+      },
+      "total_matches": 9,
+      "top_matches": [],
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 9"
+      ]
+    },
+    "repository_comparison": {
+      "source": {
+        "name": "lodash",
+        "files": 64,
+        "size_bytes": 2126786,
+        "size_mb": 2.03,
+        "languages": {
+          "javascript": 27
+        },
+        "primary_language": "javascript",
+        "nodes": 19,
+        "edges": 18,
+        "node_types": [
+          "file",
+          "repository",
+          "external_dependency"
+        ],
+        "edge_types": [
+          "contains",
+          "imports"
+        ]
+      },
+      "target": {
+        "name": "underscore",
+        "files": 389,
+        "size_bytes": 6941901,
+        "size_mb": 6.62,
+        "languages": {
+          "javascript": 189
+        },
+        "primary_language": "javascript",
+        "nodes": 181,
+        "edges": 180,
+        "node_types": [
+          "file",
+          "repository",
+          "external_dependency"
+        ],
+        "edge_types": [
+          "contains",
+          "imports"
+        ]
+      },
+      "comparison": {
+        "file_ratio": 0.16452442159383032,
+        "node_ratio": 0.10497237569060773
+      }
+    }
+  },
+  "detailed_sections": [
+    {
+      "title": "Overview",
+      "content": {
+        "overall_score": 0.3069030152187003,
+        "interpretation": "Low Similarity - Few common elements",
+        "computed_at": "2025-12-23T19:07:42.448395",
+        "source_repository": "lodash",
+        "target_repository": "underscore",
+        "weights": {
+          "structural": 0.4,
+          "semantic": 0.6
+        },
+        "score_formula": "(0.40 * structural) + (0.60 * semantic)",
+        "computed_score": "(0.40 * 0.5793) + (0.60 * 0.1253) = 0.3069"
+      },
+      "notes": [
+        "The overall similarity score of 30.69% is computed from structural similarity (57.93%) weighted at 40% and semantic similarity (12.53%) weighted at 60%. Note: The repositories differ significantly in size (ratio: 0.10), which may affect comparability. Low dependency overlap (3.39%) indicates different technology choices. Highest semantic match: 'playwright.config.js' and 'rollup.config.js' (99.05%)."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Structural Similarity",
+      "content": {
+        "score": 0.5793397185178819,
+        "components": {
+          "node_type_similarity": 0.9638333052270062,
+          "edge_type_similarity": 0.965254400200851,
+          "dependency_overlap": 0.03389830508474576,
+          "topology_similarity": 0.5406440825821459
+        },
+        "component_weights": {
+          "node_type": 0.25,
+          "edge_type": 0.2,
+          "dependency": 0.3,
+          "topology": 0.25
+        },
+        "size_ratio": 0.10497237569060773,
+        "graph_comparison": {
+          "source_nodes": 19,
+          "source_edges": 18,
+          "target_nodes": 181,
+          "target_edges": 180
+        }
+      },
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 10.50% indicates significantly different repository sizes."
+      ],
+      "subsections": [
+        {
+          "title": "Common Dependencies",
+          "content": {
+            "dependencies": [
+              "fs",
+              "path"
+            ],
+            "count": 2
+          },
+          "notes": []
+        },
+        {
+          "title": "Node Type Distribution",
+          "content": {
+            "common_types": [
+              "file",
+              "repository",
+              "external_dependency"
+            ],
+            "source_distribution": {
+              "repository": 1,
+              "file": 9,
+              "external_dependency": 9
+            },
+            "target_distribution": {
+              "repository": 1,
+              "file": 66,
+              "external_dependency": 114
+            }
+          },
+          "notes": []
+        },
+        {
+          "title": "Edge Type Distribution",
+          "content": {
+            "common_types": [
+              "contains",
+              "imports"
+            ],
+            "source_distribution": {
+              "contains": 9,
+              "imports": 9
+            },
+            "target_distribution": {
+              "contains": 66,
+              "imports": 115
+            }
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Semantic Similarity",
+      "content": {
+        "score": 0.12527854635257915,
+        "components": {
+          "function_similarity": 0.0,
+          "class_similarity": 0.0,
+          "file_similarity": 0.6263927317628957
+        },
+        "component_weights": {
+          "function": 0.5,
+          "class": 0.3,
+          "file": 0.2
+        },
+        "total_matches": 9,
+        "matches_by_type": {
+          "function_matches": 0,
+          "class_matches": 0,
+          "file_matches": 9
+        },
+        "entity_counts": {
+          "source_functions": 0,
+          "target_functions": 0,
+          "source_classes": 0,
+          "target_classes": 0
+        }
+      },
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 9"
+      ],
+      "subsections": [
+        {
+          "title": "Top Function Matches",
+          "content": {
+            "matches": []
+          },
+          "notes": []
+        },
+        {
+          "title": "Top Class Matches",
+          "content": {
+            "matches": []
+          },
+          "notes": []
+        },
+        {
+          "title": "Top File Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "playwright.config.js",
+                "target": "rollup.config.js",
+                "similarity": 0.990475058555603
+              },
+              {
+                "source": "worker.js",
+                "target": "delay.js",
+                "similarity": 0.9894979596138
+              },
+              {
+                "source": "remove.js",
+                "target": "treeshake.js",
+                "similarity": 0.9889565110206604
+              },
+              {
+                "source": ".markdown-doctest-setup.js",
+                "target": "rollup.config2.js",
+                "similarity": 0.9888092875480652
+              },
+              {
+                "source": "mapping.js",
+                "target": "unescape.js",
+                "similarity": 0.9843723177909851
+              },
+              {
+                "source": "playwright-runner.spec.js",
+                "target": "underscore-array-methods.js",
+                "similarity": 0.9820563793182373
+              },
+              {
+                "source": "placeholder.js",
+                "target": "_getLength.js",
+                "similarity": 0.9815479516983032
+              },
+              {
+                "source": "_mapping.js",
+                "target": "isWeakMap.js",
+                "similarity": 0.9807740449905396
+              },
+              {
+                "source": "uglify.options.js",
+                "target": "pick.js",
+                "similarity": 0.9724934101104736
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "All Top Semantic Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "playwright.config.js",
+                "target": "rollup.config.js",
+                "similarity": 0.990475058555603,
+                "type": "file"
+              },
+              {
+                "source": "worker.js",
+                "target": "delay.js",
+                "similarity": 0.9894979596138,
+                "type": "file"
+              },
+              {
+                "source": "remove.js",
+                "target": "treeshake.js",
+                "similarity": 0.9889565110206604,
+                "type": "file"
+              },
+              {
+                "source": ".markdown-doctest-setup.js",
+                "target": "rollup.config2.js",
+                "similarity": 0.9888092875480652,
+                "type": "file"
+              },
+              {
+                "source": "mapping.js",
+                "target": "unescape.js",
+                "similarity": 0.9843723177909851,
+                "type": "file"
+              },
+              {
+                "source": "playwright-runner.spec.js",
+                "target": "underscore-array-methods.js",
+                "similarity": 0.9820563793182373,
+                "type": "file"
+              },
+              {
+                "source": "placeholder.js",
+                "target": "_getLength.js",
+                "similarity": 0.9815479516983032,
+                "type": "file"
+              },
+              {
+                "source": "_mapping.js",
+                "target": "isWeakMap.js",
+                "similarity": 0.9807740449905396,
+                "type": "file"
+              },
+              {
+                "source": "uglify.options.js",
+                "target": "pick.js",
+                "similarity": 0.9724934101104736,
+                "type": "file"
+              }
+            ]
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Repository Statistics",
+      "content": {
+        "source": {
+          "name": "lodash",
+          "files": 64,
+          "size_bytes": 2126786,
+          "size_mb": 2.03,
+          "languages": {
+            "javascript": 27
+          },
+          "primary_language": "javascript",
+          "nodes": 19,
+          "edges": 18,
+          "node_types": [
+            "file",
+            "repository",
+            "external_dependency"
+          ],
+          "edge_types": [
+            "contains",
+            "imports"
+          ]
+        },
+        "target": {
+          "name": "underscore",
+          "files": 389,
+          "size_bytes": 6941901,
+          "size_mb": 6.62,
+          "languages": {
+            "javascript": 189
+          },
+          "primary_language": "javascript",
+          "nodes": 181,
+          "edges": 180,
+          "node_types": [
+            "file",
+            "repository",
+            "external_dependency"
+          ],
+          "edge_types": [
+            "contains",
+            "imports"
+          ]
+        },
+        "comparison": {
+          "file_ratio": 0.16452442159383032,
+          "node_ratio": 0.10497237569060773
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Graph Topology Analysis",
+      "content": {
+        "source_graph": {
+          "node_count": 19,
+          "edge_count": 18,
+          "density": 0.05263157894736842,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 9,
+              "external_dependency": 9
+            },
+            "edges": {
+              "contains": 9,
+              "imports": 9
+            }
+          }
+        },
+        "target_graph": {
+          "node_count": 181,
+          "edge_count": 180,
+          "density": 0.0055248618784530384,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 66,
+              "external_dependency": 114
+            },
+            "edges": {
+              "contains": 66,
+              "imports": 115
+            }
+          }
+        },
+        "topology_similarity": 0.5406440825821459
+      },
+      "notes": [
+        "Graph topology reveals the structural organization of the codebase.",
+        "Higher density indicates more interconnected code components."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Dependency Analysis",
+      "content": {
+        "dependency_overlap": 0.03389830508474576,
+        "common_dependencies": [
+          "fs",
+          "path"
+        ],
+        "common_dependency_count": 2
+      },
+      "notes": [
+        "Dependency overlap of 3.39% indicates different technology choices.",
+        "Common dependencies suggest shared functionality or framework usage."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Code Pattern Analysis",
+      "content": {
+        "high_similarity_patterns": {
+          "count": 9,
+          "threshold": 0.9,
+          "matches": [
+            {
+              "source": "playwright.config.js",
+              "target": "rollup.config.js",
+              "similarity": 0.990475058555603,
+              "type": "file"
+            },
+            {
+              "source": "worker.js",
+              "target": "delay.js",
+              "similarity": 0.9894979596138,
+              "type": "file"
+            },
+            {
+              "source": "remove.js",
+              "target": "treeshake.js",
+              "similarity": 0.9889565110206604,
+              "type": "file"
+            },
+            {
+              "source": ".markdown-doctest-setup.js",
+              "target": "rollup.config2.js",
+              "similarity": 0.9888092875480652,
+              "type": "file"
+            },
+            {
+              "source": "mapping.js",
+              "target": "unescape.js",
+              "similarity": 0.9843723177909851,
+              "type": "file"
+            },
+            {
+              "source": "playwright-runner.spec.js",
+              "target": "underscore-array-methods.js",
+              "similarity": 0.9820563793182373,
+              "type": "file"
+            },
+            {
+              "source": "placeholder.js",
+              "target": "_getLength.js",
+              "similarity": 0.9815479516983032,
+              "type": "file"
+            },
+            {
+              "source": "_mapping.js",
+              "target": "isWeakMap.js",
+              "similarity": 0.9807740449905396,
+              "type": "file"
+            },
+            {
+              "source": "uglify.options.js",
+              "target": "pick.js",
+              "similarity": 0.9724934101104736,
+              "type": "file"
+            }
+          ]
+        },
+        "moderate_similarity_patterns": {
+          "count": 0,
+          "threshold_range": [
+            0.8,
+            0.9
+          ],
+          "matches": []
+        }
+      },
+      "notes": [
+        "Found 9 code elements with very high similarity (>=90%).",
+        "Found 0 code elements with high similarity (80-90%).",
+        "High similarity patterns may indicate shared code, common idioms, or similar implementations."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Methodology",
+      "content": {
+        "approach": "Hybrid structural and semantic analysis",
+        "pipeline_stages": [
+          "Repository Ingestion",
+          "Language Detection",
+          "Static Structure Extraction",
+          "Semantic Graph Construction",
+          "Embedding Generation",
+          "Similarity Analysis",
+          "Report Generation"
+        ],
+        "structural_analysis": {
+          "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+          "metrics": [
+            "Node type distribution similarity (cosine)",
+            "Edge type distribution similarity (cosine)",
+            "Dependency overlap (Jaccard index)",
+            "Topology metrics (density, clustering, depth)"
+          ],
+          "weights": {
+            "node_type": 0.25,
+            "edge_type": 0.2,
+            "dependency": 0.3,
+            "topology": 0.25
+          }
+        },
+        "semantic_analysis": {
+          "description": "Compares code meaning using neural embeddings",
+          "encoder": "microsoft/codebert-base",
+          "embedding_dimension": 768,
+          "granularity": [
+            "function",
+            "class",
+            "file"
+          ],
+          "matching": "Greedy optimal matching with threshold",
+          "similarity_threshold": 0.7,
+          "weights": {
+            "function": 0.5,
+            "class": 0.3,
+            "file": 0.2
+          }
+        },
+        "hybrid_combination": {
+          "description": "Weighted combination of structural and semantic scores",
+          "default_structural_weight": 0.4,
+          "default_semantic_weight": 0.6
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Limitations and Assumptions",
+      "content": {
+        "analysis_limitations": [
+          "Few entities have embeddings, semantic similarity may be less reliable.",
+          "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+        ],
+        "general_limitations": [
+          "Static analysis only - runtime behavior not considered",
+          "Variable-level data flow not tracked",
+          "Similarity is computed, not semantic equivalence",
+          "Cross-language comparison limited by embedding model training",
+          "Large repositories may have sampling limitations"
+        ],
+        "assumptions": [
+          "Code follows standard conventions for the language",
+          "File extensions correctly indicate language",
+          "Repository structure is representative of codebase organization",
+          "Function/class naming reflects purpose",
+          "Import statements reflect actual dependencies"
+        ],
+        "score_interpretation": {
+          "0.9_to_1.0": "Very High - Nearly identical codebases",
+          "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+          "0.5_to_0.75": "Moderate - Some common patterns",
+          "0.25_to_0.5": "Low - Few common elements",
+          "0.0_to_0.25": "Very Low - Largely different codebases"
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Recommendations",
+      "content": {
+        "recommendations": [
+          "These codebases appear distinct and serve different purposes",
+          "Limited opportunity for direct code sharing",
+          "May benefit from different architectural approaches",
+          "Significant difference between structural and semantic similarity - investigate organizational vs. implementation differences"
+        ],
+        "based_on": {
+          "overall_score": 0.3069030152187003,
+          "structural_score": 0.5793397185178819,
+          "semantic_score": 0.12527854635257915
+        }
+      },
+      "notes": [],
+      "subsections": []
+    }
+  ],
+  "methodology": {
+    "approach": "Hybrid structural and semantic analysis",
+    "pipeline_stages": [
+      "Repository Ingestion",
+      "Language Detection",
+      "Static Structure Extraction",
+      "Semantic Graph Construction",
+      "Embedding Generation",
+      "Similarity Analysis",
+      "Report Generation"
+    ],
+    "structural_analysis": {
+      "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+      "metrics": [
+        "Node type distribution similarity (cosine)",
+        "Edge type distribution similarity (cosine)",
+        "Dependency overlap (Jaccard index)",
+        "Topology metrics (density, clustering, depth)"
+      ],
+      "weights": {
+        "node_type": 0.25,
+        "edge_type": 0.2,
+        "dependency": 0.3,
+        "topology": 0.25
+      }
+    },
+    "semantic_analysis": {
+      "description": "Compares code meaning using neural embeddings",
+      "encoder": "microsoft/codebert-base",
+      "embedding_dimension": 768,
+      "granularity": [
+        "function",
+        "class",
+        "file"
+      ],
+      "matching": "Greedy optimal matching with threshold",
+      "similarity_threshold": 0.7,
+      "weights": {
+        "function": 0.5,
+        "class": 0.3,
+        "file": 0.2
+      }
+    },
+    "hybrid_combination": {
+      "description": "Weighted combination of structural and semantic scores",
+      "default_structural_weight": 0.4,
+      "default_semantic_weight": 0.6
+    }
+  },
+  "limitations": {
+    "analysis_limitations": [
+      "Few entities have embeddings, semantic similarity may be less reliable.",
+      "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+    ],
+    "general_limitations": [
+      "Static analysis only - runtime behavior not considered",
+      "Variable-level data flow not tracked",
+      "Similarity is computed, not semantic equivalence",
+      "Cross-language comparison limited by embedding model training",
+      "Large repositories may have sampling limitations"
+    ],
+    "assumptions": [
+      "Code follows standard conventions for the language",
+      "File extensions correctly indicate language",
+      "Repository structure is representative of codebase organization",
+      "Function/class naming reflects purpose",
+      "Import statements reflect actual dependencies"
+    ],
+    "score_interpretation": {
+      "0.9_to_1.0": "Very High - Nearly identical codebases",
+      "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+      "0.5_to_0.75": "Moderate - Some common patterns",
+      "0.25_to_0.5": "Low - Few common elements",
+      "0.0_to_0.25": "Very Low - Largely different codebases"
+    }
+  },
+  "raw_data": {
+    "summary": {
+      "overall_similarity": 0.3069030152187003,
+      "structural_similarity": 0.5793397185178819,
+      "semantic_similarity": 0.12527854635257915,
+      "interpretation": "Low Similarity - Few common elements"
+    },
+    "metadata": {
+      "pipeline_stages": [
+        "ingestion",
+        "analysis",
+        "graph_construction",
+        "embedding",
+        "storage",
+        "similarity",
+        "reporting"
+      ],
+      "config": {
+        "structural_weight": 0.4,
+        "semantic_weight": 0.6
+      },
+      "analysis_timestamp": "2025-12-23T19:07:42.448617",
+      "engine_version": "1.0.0"
+    }
+  }
+}

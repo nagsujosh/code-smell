@@ -1,0 +1,928 @@
+{
+  "report_info": {
+    "title": "Repository Similarity Analysis Report",
+    "version": "1.0.0",
+    "schema_version": "v1",
+    "generated_at": "2025-12-23T19:06:39.191530",
+    "pipeline_id": "b6c28f30",
+    "format": "extensive_json"
+  },
+  "repositories": {
+    "source": "https://github.com/axios/axios",
+    "target": "https://github.com/node-fetch/node-fetch"
+  },
+  "executive_summary": {
+    "overall_similarity": {
+      "score": 0.42643851186815007,
+      "percentage": "42.64%",
+      "interpretation": "Low Similarity - Few common elements"
+    },
+    "component_scores": {
+      "structural": {
+        "score": 0.5994049146583782,
+        "percentage": "59.94%"
+      },
+      "semantic": {
+        "score": 0.3111275766746646,
+        "percentage": "31.11%"
+      }
+    },
+    "key_findings": [
+      "Moderate similarity suggests some shared patterns and structures",
+      "Structural similarity exceeds semantic similarity - similar organization but different implementations"
+    ]
+  },
+  "scores": {
+    "overall": {
+      "value": 0.42643851186815007,
+      "normalized": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    "structural": {
+      "value": 0.5994049146583782,
+      "components": {
+        "node_type_similarity": 0.9591233582166062,
+        "edge_type_similarity": 0.9707680127382952,
+        "dependency_overlap": 0.07547169811320754,
+        "topology_similarity": 0.5713158524904215
+      },
+      "size_ratio": 0.1532567049808429
+    },
+    "semantic": {
+      "value": 0.3111275766746646,
+      "components": {
+        "function_similarity": 0.0,
+        "class_similarity": 0.6504031149640916,
+        "file_similarity": 0.5800332109271856
+      },
+      "total_matches": 17
+    }
+  },
+  "analysis_breakdown": {
+    "structural_analysis": {
+      "score": 0.5994049146583782,
+      "components": {
+        "node_type_similarity": 0.9591233582166062,
+        "edge_type_similarity": 0.9707680127382952,
+        "dependency_overlap": 0.07547169811320754,
+        "topology_similarity": 0.5713158524904215
+      },
+      "size_ratio": 0.1532567049808429,
+      "common_dependencies": [
+        "server",
+        "http",
+        "form-data",
+        "index"
+      ],
+      "common_node_types": [
+        "file",
+        "class",
+        "repository",
+        "external_dependency"
+      ],
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 15.33% indicates significantly different repository sizes."
+      ]
+    },
+    "semantic_analysis": {
+      "score": 0.3111275766746646,
+      "components": {
+        "function_similarity": 0.0,
+        "class_similarity": 0.6504031149640916,
+        "file_similarity": 0.5800332109271856
+      },
+      "total_matches": 17,
+      "top_matches": [],
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 17"
+      ]
+    },
+    "repository_comparison": {
+      "source": {
+        "name": "axios",
+        "files": 226,
+        "size_bytes": 878682,
+        "size_mb": 0.84,
+        "languages": {
+          "typescript": 7,
+          "javascript": 146
+        },
+        "primary_language": "javascript",
+        "nodes": 261,
+        "edges": 260,
+        "node_types": [
+          "file",
+          "class",
+          "repository",
+          "external_dependency"
+        ],
+        "edge_types": [
+          "contains",
+          "imports"
+        ]
+      },
+      "target": {
+        "name": "node-fetch",
+        "files": 53,
+        "size_bytes": 311055,
+        "size_mb": 0.3,
+        "languages": {
+          "javascript": 23,
+          "typescript": 2
+        },
+        "primary_language": "javascript",
+        "nodes": 40,
+        "edges": 39,
+        "node_types": [
+          "file",
+          "class",
+          "repository",
+          "external_dependency"
+        ],
+        "edge_types": [
+          "contains",
+          "imports"
+        ]
+      },
+      "comparison": {
+        "file_ratio": 0.2345132743362832,
+        "node_ratio": 0.1532567049808429
+      }
+    }
+  },
+  "detailed_sections": [
+    {
+      "title": "Overview",
+      "content": {
+        "overall_score": 0.42643851186815007,
+        "interpretation": "Low Similarity - Few common elements",
+        "computed_at": "2025-12-23T19:06:39.191388",
+        "source_repository": "axios",
+        "target_repository": "node-fetch",
+        "weights": {
+          "structural": 0.4,
+          "semantic": 0.6
+        },
+        "score_formula": "(0.40 * structural) + (0.60 * semantic)",
+        "computed_score": "(0.40 * 0.5994) + (0.60 * 0.3111) = 0.4264"
+      },
+      "notes": [
+        "The overall similarity score of 42.64% is computed from structural similarity (59.94%) weighted at 40% and semantic similarity (31.11%) weighted at 60%. Note: The repositories differ significantly in size (ratio: 0.15), which may affect comparability. Low dependency overlap (7.55%) indicates different technology choices. Highest semantic match: 'ResponseType' and 'ResponseType' (99.70%)."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Structural Similarity",
+      "content": {
+        "score": 0.5994049146583782,
+        "components": {
+          "node_type_similarity": 0.9591233582166062,
+          "edge_type_similarity": 0.9707680127382952,
+          "dependency_overlap": 0.07547169811320754,
+          "topology_similarity": 0.5713158524904215
+        },
+        "component_weights": {
+          "node_type": 0.25,
+          "edge_type": 0.2,
+          "dependency": 0.3,
+          "topology": 0.25
+        },
+        "size_ratio": 0.1532567049808429,
+        "graph_comparison": {
+          "source_nodes": 261,
+          "source_edges": 260,
+          "target_nodes": 40,
+          "target_edges": 39
+        }
+      },
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 15.33% indicates significantly different repository sizes."
+      ],
+      "subsections": [
+        {
+          "title": "Common Dependencies",
+          "content": {
+            "dependencies": [
+              "server",
+              "http",
+              "form-data",
+              "index"
+            ],
+            "count": 4
+          },
+          "notes": []
+        },
+        {
+          "title": "Node Type Distribution",
+          "content": {
+            "common_types": [
+              "file",
+              "class",
+              "repository",
+              "external_dependency"
+            ],
+            "source_distribution": {
+              "repository": 1,
+              "file": 82,
+              "external_dependency": 115,
+              "class": 63
+            },
+            "target_distribution": {
+              "repository": 1,
+              "file": 7,
+              "external_dependency": 22,
+              "class": 10
+            }
+          },
+          "notes": []
+        },
+        {
+          "title": "Edge Type Distribution",
+          "content": {
+            "common_types": [
+              "contains",
+              "imports"
+            ],
+            "source_distribution": {
+              "contains": 145,
+              "imports": 115
+            },
+            "target_distribution": {
+              "contains": 17,
+              "imports": 22
+            }
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Semantic Similarity",
+      "content": {
+        "score": 0.3111275766746646,
+        "components": {
+          "function_similarity": 0.0,
+          "class_similarity": 0.6504031149640916,
+          "file_similarity": 0.5800332109271856
+        },
+        "component_weights": {
+          "function": 0.5,
+          "class": 0.3,
+          "file": 0.2
+        },
+        "total_matches": 17,
+        "matches_by_type": {
+          "function_matches": 0,
+          "class_matches": 10,
+          "file_matches": 7
+        },
+        "entity_counts": {
+          "source_functions": 0,
+          "target_functions": 0,
+          "source_classes": 63,
+          "target_classes": 10
+        }
+      },
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 17"
+      ],
+      "subsections": [
+        {
+          "title": "Top Function Matches",
+          "content": {
+            "matches": []
+          },
+          "notes": []
+        },
+        {
+          "title": "Top Class Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "ResponseType",
+                "target": "ResponseType",
+                "similarity": 0.9969519376754761
+              },
+              {
+                "source": "SerializerOptions",
+                "target": "ResponseInit",
+                "similarity": 0.9910632371902466
+              },
+              {
+                "source": "AddressFamily",
+                "target": "RequestInfo",
+                "similarity": 0.9899369478225708
+              },
+              {
+                "source": "ContentType",
+                "target": "RequestRedirect",
+                "similarity": 0.9880578517913818
+              },
+              {
+                "source": "AxiosHeaderValue",
+                "target": "HeadersInit",
+                "similarity": 0.9875779151916504
+              },
+              {
+                "source": "GenericAbortSignal",
+                "target": "AbortSignal",
+                "similarity": 0.9866174459457397
+              },
+              {
+                "source": "CommonRequestHeadersList",
+                "target": "ReferrerPolicy",
+                "similarity": 0.9856228828430176
+              },
+              {
+                "source": "AxiosPromise",
+                "target": "Body",
+                "similarity": 0.9853960275650024
+              },
+              {
+                "source": "AxiosInterceptorOptions",
+                "target": "BodyInit",
+                "similarity": 0.9834039211273193
+              },
+              {
+                "source": "ParamsSerializerOptions",
+                "target": "RequestInit",
+                "similarity": 0.9789612889289856
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "Top File Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "toFormData.js",
+                "target": "form-data.js",
+                "similarity": 0.9944804310798645
+              },
+              {
+                "source": "composeSignals.js",
+                "target": "response.js",
+                "similarity": 0.9935280084609985
+              },
+              {
+                "source": "forEach.spec.js",
+                "target": "chai-timeout.js",
+                "similarity": 0.9918485879898071
+              },
+              {
+                "source": "xsrf.spec.js",
+                "target": "external-encoding.js",
+                "similarity": 0.9918316006660461
+              },
+              {
+                "source": "transformData.spec.js",
+                "target": "example.js",
+                "similarity": 0.988401472568512
+              },
+              {
+                "source": "options.spec.js",
+                "target": "request.js",
+                "similarity": 0.9882223010063171
+              },
+              {
+                "source": "toFormData.spec.js",
+                "target": "index.d.ts",
+                "similarity": 0.9879180788993835
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "All Top Semantic Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "ResponseType",
+                "target": "ResponseType",
+                "similarity": 0.9969519376754761,
+                "type": "class"
+              },
+              {
+                "source": "toFormData.js",
+                "target": "form-data.js",
+                "similarity": 0.9944804310798645,
+                "type": "file"
+              },
+              {
+                "source": "composeSignals.js",
+                "target": "response.js",
+                "similarity": 0.9935280084609985,
+                "type": "file"
+              },
+              {
+                "source": "forEach.spec.js",
+                "target": "chai-timeout.js",
+                "similarity": 0.9918485879898071,
+                "type": "file"
+              },
+              {
+                "source": "xsrf.spec.js",
+                "target": "external-encoding.js",
+                "similarity": 0.9918316006660461,
+                "type": "file"
+              },
+              {
+                "source": "SerializerOptions",
+                "target": "ResponseInit",
+                "similarity": 0.9910632371902466,
+                "type": "class"
+              },
+              {
+                "source": "AddressFamily",
+                "target": "RequestInfo",
+                "similarity": 0.9899369478225708,
+                "type": "class"
+              },
+              {
+                "source": "transformData.spec.js",
+                "target": "example.js",
+                "similarity": 0.988401472568512,
+                "type": "file"
+              },
+              {
+                "source": "options.spec.js",
+                "target": "request.js",
+                "similarity": 0.9882223010063171,
+                "type": "file"
+              },
+              {
+                "source": "ContentType",
+                "target": "RequestRedirect",
+                "similarity": 0.9880578517913818,
+                "type": "class"
+              },
+              {
+                "source": "toFormData.spec.js",
+                "target": "index.d.ts",
+                "similarity": 0.9879180788993835,
+                "type": "file"
+              },
+              {
+                "source": "AxiosHeaderValue",
+                "target": "HeadersInit",
+                "similarity": 0.9875779151916504,
+                "type": "class"
+              },
+              {
+                "source": "GenericAbortSignal",
+                "target": "AbortSignal",
+                "similarity": 0.9866174459457397,
+                "type": "class"
+              },
+              {
+                "source": "CommonRequestHeadersList",
+                "target": "ReferrerPolicy",
+                "similarity": 0.9856228828430176,
+                "type": "class"
+              },
+              {
+                "source": "AxiosPromise",
+                "target": "Body",
+                "similarity": 0.9853960275650024,
+                "type": "class"
+              },
+              {
+                "source": "AxiosInterceptorOptions",
+                "target": "BodyInit",
+                "similarity": 0.9834039211273193,
+                "type": "class"
+              },
+              {
+                "source": "ParamsSerializerOptions",
+                "target": "RequestInit",
+                "similarity": 0.9789612889289856,
+                "type": "class"
+              }
+            ]
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Repository Statistics",
+      "content": {
+        "source": {
+          "name": "axios",
+          "files": 226,
+          "size_bytes": 878682,
+          "size_mb": 0.84,
+          "languages": {
+            "typescript": 7,
+            "javascript": 146
+          },
+          "primary_language": "javascript",
+          "nodes": 261,
+          "edges": 260,
+          "node_types": [
+            "file",
+            "class",
+            "repository",
+            "external_dependency"
+          ],
+          "edge_types": [
+            "contains",
+            "imports"
+          ]
+        },
+        "target": {
+          "name": "node-fetch",
+          "files": 53,
+          "size_bytes": 311055,
+          "size_mb": 0.3,
+          "languages": {
+            "javascript": 23,
+            "typescript": 2
+          },
+          "primary_language": "javascript",
+          "nodes": 40,
+          "edges": 39,
+          "node_types": [
+            "file",
+            "class",
+            "repository",
+            "external_dependency"
+          ],
+          "edge_types": [
+            "contains",
+            "imports"
+          ]
+        },
+        "comparison": {
+          "file_ratio": 0.2345132743362832,
+          "node_ratio": 0.1532567049808429
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Graph Topology Analysis",
+      "content": {
+        "source_graph": {
+          "node_count": 261,
+          "edge_count": 260,
+          "density": 0.0038314176245210726,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 82,
+              "external_dependency": 115,
+              "class": 63
+            },
+            "edges": {
+              "contains": 145,
+              "imports": 115
+            }
+          }
+        },
+        "target_graph": {
+          "node_count": 40,
+          "edge_count": 39,
+          "density": 0.025,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 7,
+              "external_dependency": 22,
+              "class": 10
+            },
+            "edges": {
+              "contains": 17,
+              "imports": 22
+            }
+          }
+        },
+        "topology_similarity": 0.5713158524904215
+      },
+      "notes": [
+        "Graph topology reveals the structural organization of the codebase.",
+        "Higher density indicates more interconnected code components."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Dependency Analysis",
+      "content": {
+        "dependency_overlap": 0.07547169811320754,
+        "common_dependencies": [
+          "server",
+          "http",
+          "form-data",
+          "index"
+        ],
+        "common_dependency_count": 4
+      },
+      "notes": [
+        "Dependency overlap of 7.55% indicates different technology choices.",
+        "Common dependencies suggest shared functionality or framework usage."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Code Pattern Analysis",
+      "content": {
+        "high_similarity_patterns": {
+          "count": 17,
+          "threshold": 0.9,
+          "matches": [
+            {
+              "source": "ResponseType",
+              "target": "ResponseType",
+              "similarity": 0.9969519376754761,
+              "type": "class"
+            },
+            {
+              "source": "toFormData.js",
+              "target": "form-data.js",
+              "similarity": 0.9944804310798645,
+              "type": "file"
+            },
+            {
+              "source": "composeSignals.js",
+              "target": "response.js",
+              "similarity": 0.9935280084609985,
+              "type": "file"
+            },
+            {
+              "source": "forEach.spec.js",
+              "target": "chai-timeout.js",
+              "similarity": 0.9918485879898071,
+              "type": "file"
+            },
+            {
+              "source": "xsrf.spec.js",
+              "target": "external-encoding.js",
+              "similarity": 0.9918316006660461,
+              "type": "file"
+            },
+            {
+              "source": "SerializerOptions",
+              "target": "ResponseInit",
+              "similarity": 0.9910632371902466,
+              "type": "class"
+            },
+            {
+              "source": "AddressFamily",
+              "target": "RequestInfo",
+              "similarity": 0.9899369478225708,
+              "type": "class"
+            },
+            {
+              "source": "transformData.spec.js",
+              "target": "example.js",
+              "similarity": 0.988401472568512,
+              "type": "file"
+            },
+            {
+              "source": "options.spec.js",
+              "target": "request.js",
+              "similarity": 0.9882223010063171,
+              "type": "file"
+            },
+            {
+              "source": "ContentType",
+              "target": "RequestRedirect",
+              "similarity": 0.9880578517913818,
+              "type": "class"
+            }
+          ]
+        },
+        "moderate_similarity_patterns": {
+          "count": 0,
+          "threshold_range": [
+            0.8,
+            0.9
+          ],
+          "matches": []
+        }
+      },
+      "notes": [
+        "Found 17 code elements with very high similarity (>=90%).",
+        "Found 0 code elements with high similarity (80-90%).",
+        "High similarity patterns may indicate shared code, common idioms, or similar implementations."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Methodology",
+      "content": {
+        "approach": "Hybrid structural and semantic analysis",
+        "pipeline_stages": [
+          "Repository Ingestion",
+          "Language Detection",
+          "Static Structure Extraction",
+          "Semantic Graph Construction",
+          "Embedding Generation",
+          "Similarity Analysis",
+          "Report Generation"
+        ],
+        "structural_analysis": {
+          "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+          "metrics": [
+            "Node type distribution similarity (cosine)",
+            "Edge type distribution similarity (cosine)",
+            "Dependency overlap (Jaccard index)",
+            "Topology metrics (density, clustering, depth)"
+          ],
+          "weights": {
+            "node_type": 0.25,
+            "edge_type": 0.2,
+            "dependency": 0.3,
+            "topology": 0.25
+          }
+        },
+        "semantic_analysis": {
+          "description": "Compares code meaning using neural embeddings",
+          "encoder": "microsoft/codebert-base",
+          "embedding_dimension": 768,
+          "granularity": [
+            "function",
+            "class",
+            "file"
+          ],
+          "matching": "Greedy optimal matching with threshold",
+          "similarity_threshold": 0.7,
+          "weights": {
+            "function": 0.5,
+            "class": 0.3,
+            "file": 0.2
+          }
+        },
+        "hybrid_combination": {
+          "description": "Weighted combination of structural and semantic scores",
+          "default_structural_weight": 0.4,
+          "default_semantic_weight": 0.6
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Limitations and Assumptions",
+      "content": {
+        "analysis_limitations": [
+          "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+        ],
+        "general_limitations": [
+          "Static analysis only - runtime behavior not considered",
+          "Variable-level data flow not tracked",
+          "Similarity is computed, not semantic equivalence",
+          "Cross-language comparison limited by embedding model training",
+          "Large repositories may have sampling limitations"
+        ],
+        "assumptions": [
+          "Code follows standard conventions for the language",
+          "File extensions correctly indicate language",
+          "Repository structure is representative of codebase organization",
+          "Function/class naming reflects purpose",
+          "Import statements reflect actual dependencies"
+        ],
+        "score_interpretation": {
+          "0.9_to_1.0": "Very High - Nearly identical codebases",
+          "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+          "0.5_to_0.75": "Moderate - Some common patterns",
+          "0.25_to_0.5": "Low - Few common elements",
+          "0.0_to_0.25": "Very Low - Largely different codebases"
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Recommendations",
+      "content": {
+        "recommendations": [
+          "These codebases appear distinct and serve different purposes",
+          "Limited opportunity for direct code sharing",
+          "May benefit from different architectural approaches",
+          "Significant difference between structural and semantic similarity - investigate organizational vs. implementation differences"
+        ],
+        "based_on": {
+          "overall_score": 0.42643851186815007,
+          "structural_score": 0.5994049146583782,
+          "semantic_score": 0.3111275766746646
+        }
+      },
+      "notes": [],
+      "subsections": []
+    }
+  ],
+  "methodology": {
+    "approach": "Hybrid structural and semantic analysis",
+    "pipeline_stages": [
+      "Repository Ingestion",
+      "Language Detection",
+      "Static Structure Extraction",
+      "Semantic Graph Construction",
+      "Embedding Generation",
+      "Similarity Analysis",
+      "Report Generation"
+    ],
+    "structural_analysis": {
+      "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+      "metrics": [
+        "Node type distribution similarity (cosine)",
+        "Edge type distribution similarity (cosine)",
+        "Dependency overlap (Jaccard index)",
+        "Topology metrics (density, clustering, depth)"
+      ],
+      "weights": {
+        "node_type": 0.25,
+        "edge_type": 0.2,
+        "dependency": 0.3,
+        "topology": 0.25
+      }
+    },
+    "semantic_analysis": {
+      "description": "Compares code meaning using neural embeddings",
+      "encoder": "microsoft/codebert-base",
+      "embedding_dimension": 768,
+      "granularity": [
+        "function",
+        "class",
+        "file"
+      ],
+      "matching": "Greedy optimal matching with threshold",
+      "similarity_threshold": 0.7,
+      "weights": {
+        "function": 0.5,
+        "class": 0.3,
+        "file": 0.2
+      }
+    },
+    "hybrid_combination": {
+      "description": "Weighted combination of structural and semantic scores",
+      "default_structural_weight": 0.4,
+      "default_semantic_weight": 0.6
+    }
+  },
+  "limitations": {
+    "analysis_limitations": [
+      "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+    ],
+    "general_limitations": [
+      "Static analysis only - runtime behavior not considered",
+      "Variable-level data flow not tracked",
+      "Similarity is computed, not semantic equivalence",
+      "Cross-language comparison limited by embedding model training",
+      "Large repositories may have sampling limitations"
+    ],
+    "assumptions": [
+      "Code follows standard conventions for the language",
+      "File extensions correctly indicate language",
+      "Repository structure is representative of codebase organization",
+      "Function/class naming reflects purpose",
+      "Import statements reflect actual dependencies"
+    ],
+    "score_interpretation": {
+      "0.9_to_1.0": "Very High - Nearly identical codebases",
+      "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+      "0.5_to_0.75": "Moderate - Some common patterns",
+      "0.25_to_0.5": "Low - Few common elements",
+      "0.0_to_0.25": "Very Low - Largely different codebases"
+    }
+  },
+  "raw_data": {
+    "summary": {
+      "overall_similarity": 0.42643851186815007,
+      "structural_similarity": 0.5994049146583782,
+      "semantic_similarity": 0.3111275766746646,
+      "interpretation": "Low Similarity - Few common elements"
+    },
+    "metadata": {
+      "pipeline_stages": [
+        "ingestion",
+        "analysis",
+        "graph_construction",
+        "embedding",
+        "storage",
+        "similarity",
+        "reporting"
+      ],
+      "config": {
+        "structural_weight": 0.4,
+        "semantic_weight": 0.6
+      },
+      "analysis_timestamp": "2025-12-23T19:06:39.191656",
+      "engine_version": "1.0.0"
+    }
+  }
+}

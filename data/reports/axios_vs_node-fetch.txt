@@ -1,0 +1,441 @@
+
+====================================================================================================
+                               REPOSITORY SIMILARITY ANALYSIS REPORT
+                                Semantic Codebase Graph Engine v1.0
+====================================================================================================
+
+Report Generated: 2025-12-23 19:06:39 UTC
+Pipeline ID: b6c28f30
+Analysis Type: Repository Comparison
+
+====================================================================================================
+                                         EXECUTIVE SUMMARY
+====================================================================================================
+
+  OVERALL SIMILARITY SCORE: 0.4264 (42.64%)
+
+  Interpretation: Low Similarity - Few common elements
+
+  Component Scores:
+    Structural Similarity: 0.5994 (59.94%)
+    Semantic Similarity:   0.3111 (31.11%)
+
+  Overall         [#####################.............................]  42.64%
+  Structural      [#############################.....................]  59.94%
+  Semantic        [###############...................................]  31.11%
+
+----------------------------------------------------------------------------------------------------
+REPOSITORIES ANALYZED
+----------------------------------------------------------------------------------------------------
+
+  Source Repository: https://github.com/axios/axios
+  Target Repository: https://github.com/node-fetch/node-fetch
+
+----------------------------------------------------------------------------------------------------
+OVERVIEW
+----------------------------------------------------------------------------------------------------
+
+  Overall Score: 0.4264 (42.64%)
+  Interpretation: Low Similarity - Few common elements
+  Computed At: 2025-12-23T19:06:39.191388
+  Source Repository: axios
+  Target Repository: node-fetch
+  Weights:
+    Structural: 0.4000 (40.00%)
+    Semantic: 0.6000 (60.00%)
+  Score Formula: (0.40 * structural) + (0.60 * semantic)
+  Computed Score: (0.40 * 0.5994) + (0.60 * 0.3111) = 0.4264
+  Note: The overall similarity score of 42.64% is computed from structural similarity (59.94%) weighted at 40% and semantic similarity (31.11%) weighted at 60%. Note: The repositories differ significantly in size (ratio: 0.15), which may affect comparability. Low dependency overlap (7.55%) indicates different technology choices. Highest semantic match: 'ResponseType' and 'ResponseType' (99.70%).
+
+
+----------------------------------------------------------------------------------------------------
+STRUCTURAL SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.5994 (59.94%)
+  Components:
+    Node Type Similarity: 0.9591 (95.91%)
+    Edge Type Similarity: 0.9708 (97.08%)
+    Dependency Overlap: 0.0755 (7.55%)
+    Topology Similarity: 0.5713 (57.13%)
+  Component Weights:
+    Node Type: 0.2500 (25.00%)
+    Edge Type: 0.2000 (20.00%)
+    Dependency: 0.3000 (30.00%)
+    Topology: 0.2500 (25.00%)
+  Size Ratio: 0.1533 (15.33%)
+  Graph Comparison:
+    Source Nodes: 261
+    Source Edges: 260
+    Target Nodes: 40
+    Target Edges: 39
+  Note: Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.
+  Note: Size ratio of 15.33% indicates significantly different repository sizes.
+
+
+  Common Dependencies
+  -------------------
+
+    Dependencies: (4 items)
+      - server
+      - http
+      - form-data
+      - index
+    Count: 4
+
+
+  Node Type Distribution
+  ----------------------
+
+    Common Types: (4 items)
+      - file
+      - class
+      - repository
+      - external_dependency
+    Source Distribution:
+      Repository: 1
+      File: 82
+      External Dependency: 115
+      Class: 63
+    Target Distribution:
+      Repository: 1
+      File: 7
+      External Dependency: 22
+      Class: 10
+
+
+  Edge Type Distribution
+  ----------------------
+
+    Common Types: (2 items)
+      - contains
+      - imports
+    Source Distribution:
+      Contains: 145
+      Imports: 115
+    Target Distribution:
+      Contains: 17
+      Imports: 22
+
+
+----------------------------------------------------------------------------------------------------
+SEMANTIC SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.3111 (31.11%)
+  Components:
+    Function Similarity: 0.0000 (0.00%)
+    Class Similarity: 0.6504 (65.04%)
+    File Similarity: 0.5800 (58.00%)
+  Component Weights:
+    Function: 0.5000 (50.00%)
+    Class: 0.3000 (30.00%)
+    File: 0.2000 (20.00%)
+  Total Matches: 17
+  Matches By Type:
+    Function Matches: 0
+    Class Matches: 10
+    File Matches: 7
+  Entity Counts:
+    Source Functions: 0
+    Target Functions: 0
+    Source Classes: 63
+    Target Classes: 10
+  Note: Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).
+  Note: Aggregation method: weighted_average
+  Note: Total matched pairs above threshold: 17
+
+
+  Top Function Matches
+  --------------------
+
+    Matches: (0 items)
+
+
+  Top Class Matches
+  -----------------
+
+    Matches: (10 items)
+      [1] source: ResponseType, target: ResponseType, similarity: 0.9970
+      [2] source: SerializerOptions, target: ResponseInit, similarity: 0.9911
+      [3] source: AddressFamily, target: RequestInfo, similarity: 0.9899
+      [4] source: ContentType, target: RequestRedirect, similarity: 0.9881
+      [5] source: AxiosHeaderValue, target: HeadersInit, similarity: 0.9876
+      [6] source: GenericAbortSignal, target: AbortSignal, similarity: 0.9866
+      [7] source: CommonRequestHeadersList, target: ReferrerPolicy, similarity: 0.9856
+      [8] source: AxiosPromise, target: Body, similarity: 0.9854
+      [9] source: AxiosInterceptorOptions, target: BodyInit, similarity: 0.9834
+      [10] source: ParamsSerializerOptions, target: RequestInit, similarity: 0.9790
+
+
+  Top File Matches
+  ----------------
+
+    Matches: (7 items)
+      [1] source: toFormData.js, target: form-data.js, similarity: 0.9945
+      [2] source: composeSignals.js, target: response.js, similarity: 0.9935
+      [3] source: forEach.spec.js, target: chai-timeout.js, similarity: 0.9918
+      [4] source: xsrf.spec.js, target: external-encoding.js, similarity: 0.9918
+      [5] source: transformData.spec.js, target: example.js, similarity: 0.9884
+      [6] source: options.spec.js, target: request.js, similarity: 0.9882
+      [7] source: toFormData.spec.js, target: index.d.ts, similarity: 0.9879
+
+
+  All Top Semantic Matches
+  ------------------------
+
+    Matches: (17 items)
+      [1] source: ResponseType, target: ResponseType, similarity: 0.9970, type: class
+      [2] source: toFormData.js, target: form-data.js, similarity: 0.9945, type: file
+      [3] source: composeSignals.js, target: response.js, similarity: 0.9935, type: file
+      [4] source: forEach.spec.js, target: chai-timeout.js, similarity: 0.9918, type: file
+      [5] source: xsrf.spec.js, target: external-encoding.js, similarity: 0.9918, type: file
+      [6] source: SerializerOptions, target: ResponseInit, similarity: 0.9911, type: class
+      [7] source: AddressFamily, target: RequestInfo, similarity: 0.9899, type: class
+      [8] source: transformData.spec.js, target: example.js, similarity: 0.9884, type: file
+      [9] source: options.spec.js, target: request.js, similarity: 0.9882, type: file
+      [10] source: ContentType, target: RequestRedirect, similarity: 0.9881, type: class
+      [11] source: toFormData.spec.js, target: index.d.ts, similarity: 0.9879, type: file
+      [12] source: AxiosHeaderValue, target: HeadersInit, similarity: 0.9876, type: class
+      [13] source: GenericAbortSignal, target: AbortSignal, similarity: 0.9866, type: class
+      [14] source: CommonRequestHeadersList, target: ReferrerPolicy, similarity: 0.9856, type: class
+      [15] source: AxiosPromise, target: Body, similarity: 0.9854, type: class
+      [16] source: AxiosInterceptorOptions, target: BodyInit, similarity: 0.9834, type: class
+      [17] source: ParamsSerializerOptions, target: RequestInit, similarity: 0.9790, type: class
+
+
+----------------------------------------------------------------------------------------------------
+REPOSITORY STATISTICS
+----------------------------------------------------------------------------------------------------
+
+  Source:
+    Name: axios
+    Files: 226
+    Size Bytes: 878682
+    Size Mb: 0.8400 (84.00%)
+    Languages:
+      Typescript: 7
+      Javascript: 146
+    Primary Language: javascript
+    Nodes: 261
+    Edges: 260
+    Node Types: (4 items)
+      - file
+      - class
+      - repository
+      - external_dependency
+    Edge Types: (2 items)
+      - contains
+      - imports
+  Target:
+    Name: node-fetch
+    Files: 53
+    Size Bytes: 311055
+    Size Mb: 0.3000 (30.00%)
+    Languages:
+      Javascript: 23
+      Typescript: 2
+    Primary Language: javascript
+    Nodes: 40
+    Edges: 39
+    Node Types: (4 items)
+      - file
+      - class
+      - repository
+      - external_dependency
+    Edge Types: (2 items)
+      - contains
+      - imports
+  Comparison:
+    File Ratio: 0.2345 (23.45%)
+    Node Ratio: 0.1533 (15.33%)
+
+----------------------------------------------------------------------------------------------------
+GRAPH TOPOLOGY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Source Graph:
+    Node Count: 261
+    Edge Count: 260
+    Density: 0.0038 (0.38%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 82
+        External Dependency: 115
+        Class: 63
+      Edges:
+        Contains: 145
+        Imports: 115
+  Target Graph:
+    Node Count: 40
+    Edge Count: 39
+    Density: 0.0250 (2.50%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 7
+        External Dependency: 22
+        Class: 10
+      Edges:
+        Contains: 17
+        Imports: 22
+  Topology Similarity: 0.5713 (57.13%)
+  Note: Graph topology reveals the structural organization of the codebase.
+  Note: Higher density indicates more interconnected code components.
+
+
+----------------------------------------------------------------------------------------------------
+DEPENDENCY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Dependency Overlap: 0.0755 (7.55%)
+  Common Dependencies: (4 items)
+    - server
+    - http
+    - form-data
+    - index
+  Common Dependency Count: 4
+  Note: Dependency overlap of 7.55% indicates different technology choices.
+  Note: Common dependencies suggest shared functionality or framework usage.
+
+
+----------------------------------------------------------------------------------------------------
+CODE PATTERN ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  High Similarity Patterns:
+    Count: 17
+    Threshold: 0.9000 (90.00%)
+    Matches: (10 items)
+      [1] source: ResponseType, target: ResponseType, similarity: 0.9970, type: class
+      [2] source: toFormData.js, target: form-data.js, similarity: 0.9945, type: file
+      [3] source: composeSignals.js, target: response.js, similarity: 0.9935, type: file
+      [4] source: forEach.spec.js, target: chai-timeout.js, similarity: 0.9918, type: file
+      [5] source: xsrf.spec.js, target: external-encoding.js, similarity: 0.9918, type: file
+      [6] source: SerializerOptions, target: ResponseInit, similarity: 0.9911, type: class
+      [7] source: AddressFamily, target: RequestInfo, similarity: 0.9899, type: class
+      [8] source: transformData.spec.js, target: example.js, similarity: 0.9884, type: file
+      [9] source: options.spec.js, target: request.js, similarity: 0.9882, type: file
+      [10] source: ContentType, target: RequestRedirect, similarity: 0.9881, type: class
+  Moderate Similarity Patterns:
+    Count: 0
+    Threshold Range: (2 items)
+      - 0.8
+      - 0.9
+    Matches: (0 items)
+  Note: Found 17 code elements with very high similarity (>=90%).
+  Note: Found 0 code elements with high similarity (80-90%).
+  Note: High similarity patterns may indicate shared code, common idioms, or similar implementations.
+
+
+----------------------------------------------------------------------------------------------------
+METHODOLOGY
+----------------------------------------------------------------------------------------------------
+
+  Approach: Hybrid structural and semantic analysis
+  Pipeline Stages: (7 items)
+    - Repository Ingestion
+    - Language Detection
+    - Static Structure Extraction
+    - Semantic Graph Construction
+    - Embedding Generation
+    - Similarity Analysis
+    - Report Generation
+  Structural Analysis:
+    Description: Compares graph topology, node/edge distributions, and dependency overlap
+    Metrics: (4 items)
+      - Node type distribution similarity (cosine)
+      - Edge type distribution similarity (cosine)
+      - Dependency overlap (Jaccard index)
+      - Topology metrics (density, clustering, depth)
+    Weights:
+      Node Type: 0.2500 (25.00%)
+      Edge Type: 0.2000 (20.00%)
+      Dependency: 0.3000 (30.00%)
+      Topology: 0.2500 (25.00%)
+  Semantic Analysis:
+    Description: Compares code meaning using neural embeddings
+    Encoder: microsoft/codebert-base
+    Embedding Dimension: 768
+    Granularity: (3 items)
+      - function
+      - class
+      - file
+    Matching: Greedy optimal matching with threshold
+    Similarity Threshold: 0.7000 (70.00%)
+    Weights:
+      Function: 0.5000 (50.00%)
+      Class: 0.3000 (30.00%)
+      File: 0.2000 (20.00%)
+  Hybrid Combination:
+    Description: Weighted combination of structural and semantic scores
+    Default Structural Weight: 0.4000 (40.00%)
+    Default Semantic Weight: 0.6000 (60.00%)
+
+----------------------------------------------------------------------------------------------------
+LIMITATIONS AND ASSUMPTIONS
+----------------------------------------------------------------------------------------------------
+
+  Analysis Limitations: (1 items)
+    - This analysis is based on static structure and semantics only; runtime behavior is not considered.
+  General Limitations: (5 items)
+    - Static analysis only - runtime behavior not considered
+    - Variable-level data flow not tracked
+    - Similarity is computed, not semantic equivalence
+    - Cross-language comparison limited by embedding model training
+    - Large repositories may have sampling limitations
+  Assumptions: (5 items)
+    - Code follows standard conventions for the language
+    - File extensions correctly indicate language
+    - Repository structure is representative of codebase organization
+    - Function/class naming reflects purpose
+    - Import statements reflect actual dependencies
+  Score Interpretation:
+    0.9 To 1.0: Very High - Nearly identical codebases
+    0.75 To 0.9: High - Significant overlap, possibly related projects
+    0.5 To 0.75: Moderate - Some common patterns
+    0.25 To 0.5: Low - Few common elements
+    0.0 To 0.25: Very Low - Largely different codebases
+
+----------------------------------------------------------------------------------------------------
+RECOMMENDATIONS
+----------------------------------------------------------------------------------------------------
+
+  Recommendations: (4 items)
+    - These codebases appear distinct and serve different purposes
+    - Limited opportunity for direct code sharing
+    - May benefit from different architectural approaches
+    - Significant difference between structural and semantic similarity - investigate organizational vs. implementation differences
+  Based On:
+    Overall Score: 0.4264 (42.64%)
+    Structural Score: 0.5994 (59.94%)
+    Semantic Score: 0.3111 (31.11%)
+
+----------------------------------------------------------------------------------------------------
+INTERPRETATION AND KEY INSIGHTS
+----------------------------------------------------------------------------------------------------
+
+  Score Analysis:
+  ----------------------------------------
+  - The repositories show MODERATE similarity
+    This suggests:
+      * Some shared patterns or conventions
+      * Similar technology stack in some areas
+      * Different approaches with some overlap
+
+  Component Analysis:
+  ----------------------------------------
+  - Structural similarity EXCEEDS semantic similarity
+    Implication: Similar organization/architecture but
+    different implementation details or naming conventions
+
+====================================================================================================
+                                           END OF REPORT
+====================================================================================================
+
+This report was generated by the Semantic Codebase Graph Engine.
+For more information, see the project documentation.
+
+Report ID: b6c28f30
+Generated: 2025-12-23 19:06:39

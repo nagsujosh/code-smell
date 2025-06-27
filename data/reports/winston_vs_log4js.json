@@ -1,0 +1,1044 @@
+{
+  "report_info": {
+    "title": "Repository Similarity Analysis Report",
+    "version": "1.0.0",
+    "schema_version": "v1",
+    "generated_at": "2025-12-23T19:08:55.508254",
+    "pipeline_id": "8b53dff2",
+    "format": "extensive_json"
+  },
+  "repositories": {
+    "source": "https://github.com/winstonjs/winston",
+    "target": "https://github.com/log4js-node/log4js-node"
+  },
+  "executive_summary": {
+    "overall_similarity": {
+      "score": 0.5722104922729505,
+      "percentage": "57.22%",
+      "interpretation": "Moderate Similarity - Some common patterns and components"
+    },
+    "component_scores": {
+      "structural": {
+        "score": 0.6954249381570796,
+        "percentage": "69.54%"
+      },
+      "semantic": {
+        "score": 0.4900675283501978,
+        "percentage": "49.01%"
+      }
+    },
+    "key_findings": [
+      "Moderate similarity suggests some shared patterns and structures",
+      "Structural similarity exceeds semantic similarity - similar organization but different implementations"
+    ]
+  },
+  "scores": {
+    "overall": {
+      "value": 0.5722104922729505,
+      "normalized": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    "structural": {
+      "value": 0.6954249381570796,
+      "components": {
+        "node_type_similarity": 0.9764155109645096,
+        "edge_type_similarity": 0.9804377517740721,
+        "dependency_overlap": 0.08928571428571429,
+        "topology_similarity": 0.9137911831016943
+      },
+      "size_ratio": 0.8280542986425339
+    },
+    "semantic": {
+      "value": 0.4900675283501978,
+      "components": {
+        "function_similarity": 0.0,
+        "class_similarity": 0.9760523264606794,
+        "file_similarity": 0.9862591520599697
+      },
+      "total_matches": 70
+    }
+  },
+  "analysis_breakdown": {
+    "structural_analysis": {
+      "score": 0.6954249381570796,
+      "components": {
+        "node_type_similarity": 0.9764155109645096,
+        "edge_type_similarity": 0.9804377517740721,
+        "dependency_overlap": 0.08928571428571429,
+        "topology_similarity": 0.9137911831016943
+      },
+      "size_ratio": 0.8280542986425339,
+      "common_dependencies": [
+        "http",
+        "fs",
+        "console",
+        "child_process",
+        "os"
+      ],
+      "common_node_types": [
+        "repository",
+        "file",
+        "class",
+        "external_dependency"
+      ],
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 82.81% indicates similar repository sizes."
+      ]
+    },
+    "semantic_analysis": {
+      "score": 0.4900675283501978,
+      "components": {
+        "function_similarity": 0.0,
+        "class_similarity": 0.9760523264606794,
+        "file_similarity": 0.9862591520599697
+      },
+      "total_matches": 70,
+      "top_matches": [],
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 70"
+      ]
+    },
+    "repository_comparison": {
+      "source": {
+        "name": "winston",
+        "files": 113,
+        "size_bytes": 684228,
+        "size_mb": 0.65,
+        "languages": {
+          "javascript": 79,
+          "typescript": 5
+        },
+        "primary_language": "javascript",
+        "nodes": 221,
+        "edges": 220,
+        "node_types": [
+          "class",
+          "repository",
+          "external_dependency",
+          "file"
+        ],
+        "edge_types": [
+          "contains",
+          "imports"
+        ]
+      },
+      "target": {
+        "name": "log4js-node",
+        "files": 157,
+        "size_bytes": 778207,
+        "size_mb": 0.74,
+        "languages": {
+          "javascript": 96,
+          "typescript": 2
+        },
+        "primary_language": "javascript",
+        "nodes": 183,
+        "edges": 182,
+        "node_types": [
+          "class",
+          "repository",
+          "external_dependency",
+          "file"
+        ],
+        "edge_types": [
+          "contains",
+          "imports"
+        ]
+      },
+      "comparison": {
+        "file_ratio": 0.7197452229299363,
+        "node_ratio": 0.8280542986425339
+      }
+    }
+  },
+  "detailed_sections": [
+    {
+      "title": "Overview",
+      "content": {
+        "overall_score": 0.5722104922729505,
+        "interpretation": "Moderate Similarity - Some common patterns and components",
+        "computed_at": "2025-12-23T19:08:55.508108",
+        "source_repository": "winston",
+        "target_repository": "log4js-node",
+        "weights": {
+          "structural": 0.4,
+          "semantic": 0.6
+        },
+        "score_formula": "(0.40 * structural) + (0.60 * semantic)",
+        "computed_score": "(0.40 * 0.6954) + (0.60 * 0.4901) = 0.5722"
+      },
+      "notes": [
+        "The overall similarity score of 57.22% is computed from structural similarity (69.54%) weighted at 40% and semantic similarity (49.01%) weighted at 60%. Low dependency overlap (8.93%) indicates different technology choices. Highest semantic match: 'file-create-dir.test.js' and 'noLogFilter-test.js' (99.43%)."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Structural Similarity",
+      "content": {
+        "score": 0.6954249381570796,
+        "components": {
+          "node_type_similarity": 0.9764155109645096,
+          "edge_type_similarity": 0.9804377517740721,
+          "dependency_overlap": 0.08928571428571429,
+          "topology_similarity": 0.9137911831016943
+        },
+        "component_weights": {
+          "node_type": 0.25,
+          "edge_type": 0.2,
+          "dependency": 0.3,
+          "topology": 0.25
+        },
+        "size_ratio": 0.8280542986425339,
+        "graph_comparison": {
+          "source_nodes": 221,
+          "source_edges": 220,
+          "target_nodes": 183,
+          "target_edges": 182
+        }
+      },
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 82.81% indicates similar repository sizes."
+      ],
+      "subsections": [
+        {
+          "title": "Common Dependencies",
+          "content": {
+            "dependencies": [
+              "http",
+              "fs",
+              "console",
+              "child_process",
+              "os"
+            ],
+            "count": 5
+          },
+          "notes": []
+        },
+        {
+          "title": "Node Type Distribution",
+          "content": {
+            "common_types": [
+              "repository",
+              "file",
+              "class",
+              "external_dependency"
+            ],
+            "source_distribution": {
+              "repository": 1,
+              "file": 58,
+              "class": 24,
+              "external_dependency": 138
+            },
+            "target_distribution": {
+              "repository": 1,
+              "file": 46,
+              "class": 41,
+              "external_dependency": 95
+            }
+          },
+          "notes": []
+        },
+        {
+          "title": "Edge Type Distribution",
+          "content": {
+            "common_types": [
+              "contains",
+              "imports"
+            ],
+            "source_distribution": {
+              "contains": 82,
+              "imports": 139
+            },
+            "target_distribution": {
+              "contains": 87,
+              "imports": 97
+            }
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Semantic Similarity",
+      "content": {
+        "score": 0.4900675283501978,
+        "components": {
+          "function_similarity": 0.0,
+          "class_similarity": 0.9760523264606794,
+          "file_similarity": 0.9862591520599697
+        },
+        "component_weights": {
+          "function": 0.5,
+          "class": 0.3,
+          "file": 0.2
+        },
+        "total_matches": 70,
+        "matches_by_type": {
+          "function_matches": 0,
+          "class_matches": 24,
+          "file_matches": 46
+        },
+        "entity_counts": {
+          "source_functions": 0,
+          "target_functions": 0,
+          "source_classes": 24,
+          "target_classes": 41
+        }
+      },
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 70"
+      ],
+      "subsections": [
+        {
+          "title": "Top Function Matches",
+          "content": {
+            "matches": []
+          },
+          "notes": []
+        },
+        {
+          "title": "Top Class Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "AbstractConfigSetColors",
+                "target": "CustomAppender",
+                "similarity": 0.9913476705551147
+              },
+              {
+                "source": "HttpTransportInstance",
+                "target": "LoggingEvent",
+                "similarity": 0.9896999597549438
+              },
+              {
+                "source": "LeveledLogMethod",
+                "target": "Log4js",
+                "similarity": 0.9894495010375977
+              },
+              {
+                "source": "LoggerOptions",
+                "target": "Logger",
+                "similarity": 0.9893508553504944
+              },
+              {
+                "source": "LogEntry",
+                "target": "CustomLayout",
+                "similarity": 0.9885696172714233
+              },
+              {
+                "source": "StreamTransportOptions",
+                "target": "StandardOutputAppender",
+                "similarity": 0.9872297644615173
+              },
+              {
+                "source": "ConsoleTransportInstance",
+                "target": "StandardErrorAppender",
+                "similarity": 0.9861427545547485
+              },
+              {
+                "source": "StreamTransportInstance",
+                "target": "AppenderModule",
+                "similarity": 0.9860211610794067
+              },
+              {
+                "source": "AbstractConfigSetLevels",
+                "target": "MessagePassThroughLayout",
+                "similarity": 0.9855589866638184
+              },
+              {
+                "source": "FileTransportInstance",
+                "target": "CallStack",
+                "similarity": 0.9850839376449585
+              },
+              {
+                "source": "LogMethod",
+                "target": "Recording",
+                "similarity": 0.9844773411750793
+              },
+              {
+                "source": "HttpTransportOptions",
+                "target": "Configuration",
+                "similarity": 0.9813969135284424
+              },
+              {
+                "source": "ConsoleTransportOptions",
+                "target": "Logger",
+                "similarity": 0.9789202809333801
+              },
+              {
+                "source": "FileTransportOptions",
+                "target": "FileAppender",
+                "similarity": 0.9772925972938538
+              },
+              {
+                "source": "CliConfigSetLevels",
+                "target": "LayoutsParam",
+                "similarity": 0.976986825466156
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "Top File Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "file-create-dir.test.js",
+                "target": "noLogFilter-test.js",
+                "similarity": 0.9942651391029358
+              },
+              {
+                "source": "stream.test.js",
+                "target": "newLevel-test.js",
+                "similarity": 0.9936904907226562
+              },
+              {
+                "source": "file-maxsize.js",
+                "target": "recordingAppender-test.js",
+                "similarity": 0.9935742616653442
+              },
+              {
+                "source": "simple-stream.js",
+                "target": "categoryFilter-test.js",
+                "similarity": 0.9933754801750183
+              },
+              {
+                "source": "custom-levels-colors.js",
+                "target": "date-file-rolling.js",
+                "similarity": 0.9932673573493958
+              },
+              {
+                "source": "jest.config.js",
+                "target": "flush-on-exit.js",
+                "similarity": 0.9928613305091858
+              },
+              {
+                "source": "rejection-handler.test.js",
+                "target": "sandbox-coverage.js",
+                "similarity": 0.9925188422203064
+              },
+              {
+                "source": "json.js",
+                "target": "passenger-test.js",
+                "similarity": 0.9924348592758179
+              },
+              {
+                "source": "quick-start.js",
+                "target": "patternLayout-tokens.js",
+                "similarity": 0.9919326901435852
+              },
+              {
+                "source": "handler-tests.js",
+                "target": "stdoutAppender-test.js",
+                "similarity": 0.9919018149375916
+              },
+              {
+                "source": "color-message.js",
+                "target": "fromreadme.js",
+                "similarity": 0.9917638301849365
+              },
+              {
+                "source": "legacy-mixed-transport.js",
+                "target": "logFaces-appender.js",
+                "similarity": 0.991699755191803
+              },
+              {
+                "source": "create-file.js",
+                "target": "levels-before-configure-test.js",
+                "similarity": 0.991693913936615
+              },
+              {
+                "source": "custom-timestamp.js",
+                "target": "log-to-files.js",
+                "similarity": 0.991656482219696
+              },
+              {
+                "source": "format-logger-and-transport.js",
+                "target": "consoleAppender-test.js",
+                "similarity": 0.9916313886642456
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "All Top Semantic Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "file-create-dir.test.js",
+                "target": "noLogFilter-test.js",
+                "similarity": 0.9942651391029358,
+                "type": "file"
+              },
+              {
+                "source": "stream.test.js",
+                "target": "newLevel-test.js",
+                "similarity": 0.9936904907226562,
+                "type": "file"
+              },
+              {
+                "source": "file-maxsize.js",
+                "target": "recordingAppender-test.js",
+                "similarity": 0.9935742616653442,
+                "type": "file"
+              },
+              {
+                "source": "simple-stream.js",
+                "target": "categoryFilter-test.js",
+                "similarity": 0.9933754801750183,
+                "type": "file"
+              },
+              {
+                "source": "custom-levels-colors.js",
+                "target": "date-file-rolling.js",
+                "similarity": 0.9932673573493958,
+                "type": "file"
+              },
+              {
+                "source": "jest.config.js",
+                "target": "flush-on-exit.js",
+                "similarity": 0.9928613305091858,
+                "type": "file"
+              },
+              {
+                "source": "rejection-handler.test.js",
+                "target": "sandbox-coverage.js",
+                "similarity": 0.9925188422203064,
+                "type": "file"
+              },
+              {
+                "source": "json.js",
+                "target": "passenger-test.js",
+                "similarity": 0.9924348592758179,
+                "type": "file"
+              },
+              {
+                "source": "quick-start.js",
+                "target": "patternLayout-tokens.js",
+                "similarity": 0.9919326901435852,
+                "type": "file"
+              },
+              {
+                "source": "handler-tests.js",
+                "target": "stdoutAppender-test.js",
+                "similarity": 0.9919018149375916,
+                "type": "file"
+              },
+              {
+                "source": "color-message.js",
+                "target": "fromreadme.js",
+                "similarity": 0.9917638301849365,
+                "type": "file"
+              },
+              {
+                "source": "legacy-mixed-transport.js",
+                "target": "logFaces-appender.js",
+                "similarity": 0.991699755191803,
+                "type": "file"
+              },
+              {
+                "source": "create-file.js",
+                "target": "levels-before-configure-test.js",
+                "similarity": 0.991693913936615,
+                "type": "file"
+              },
+              {
+                "source": "custom-timestamp.js",
+                "target": "log-to-files.js",
+                "similarity": 0.991656482219696,
+                "type": "file"
+              },
+              {
+                "source": "format-logger-and-transport.js",
+                "target": "consoleAppender-test.js",
+                "similarity": 0.9916313886642456,
+                "type": "file"
+              },
+              {
+                "source": "AbstractConfigSetColors",
+                "target": "CustomAppender",
+                "similarity": 0.9913476705551147,
+                "type": "class"
+              },
+              {
+                "source": "log-exception.test.js",
+                "target": "example-connect-logger.js",
+                "similarity": 0.991146981716156,
+                "type": "file"
+              },
+              {
+                "source": "typescript-definitions.ts",
+                "target": "stacktrace.js",
+                "similarity": 0.9906363487243652,
+                "type": "file"
+              },
+              {
+                "source": "colorize.js",
+                "target": "loggly-appender.js",
+                "similarity": 0.9906147122383118,
+                "type": "file"
+              },
+              {
+                "source": "jest.config.integration.js",
+                "target": "logstashUDP.js",
+                "similarity": 0.9905902147293091,
+                "type": "file"
+              },
+              {
+                "source": "create-logger.test.js",
+                "target": "multiprocess-shutdown-test.js",
+                "similarity": 0.9905596971511841,
+                "type": "file"
+              },
+              {
+                "source": "profiler.test.js",
+                "target": "LoggingEvent-test.js",
+                "similarity": 0.9901366829872131,
+                "type": "file"
+              },
+              {
+                "source": "custom-pretty-print.js",
+                "target": "appender-dependencies-test.js",
+                "similarity": 0.990081787109375,
+                "type": "file"
+              },
+              {
+                "source": "index.d.ts",
+                "target": "hipchat-appender.js",
+                "similarity": 0.9899887442588806,
+                "type": "file"
+              },
+              {
+                "source": "config.test.js",
+                "target": "stderrAppender-test.js",
+                "similarity": 0.989741325378418,
+                "type": "file"
+              }
+            ]
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Repository Statistics",
+      "content": {
+        "source": {
+          "name": "winston",
+          "files": 113,
+          "size_bytes": 684228,
+          "size_mb": 0.65,
+          "languages": {
+            "javascript": 79,
+            "typescript": 5
+          },
+          "primary_language": "javascript",
+          "nodes": 221,
+          "edges": 220,
+          "node_types": [
+            "class",
+            "repository",
+            "external_dependency",
+            "file"
+          ],
+          "edge_types": [
+            "contains",
+            "imports"
+          ]
+        },
+        "target": {
+          "name": "log4js-node",
+          "files": 157,
+          "size_bytes": 778207,
+          "size_mb": 0.74,
+          "languages": {
+            "javascript": 96,
+            "typescript": 2
+          },
+          "primary_language": "javascript",
+          "nodes": 183,
+          "edges": 182,
+          "node_types": [
+            "class",
+            "repository",
+            "external_dependency",
+            "file"
+          ],
+          "edge_types": [
+            "contains",
+            "imports"
+          ]
+        },
+        "comparison": {
+          "file_ratio": 0.7197452229299363,
+          "node_ratio": 0.8280542986425339
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Graph Topology Analysis",
+      "content": {
+        "source_graph": {
+          "node_count": 221,
+          "edge_count": 220,
+          "density": 0.004524886877828055,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 58,
+              "class": 24,
+              "external_dependency": 138
+            },
+            "edges": {
+              "contains": 82,
+              "imports": 139
+            }
+          }
+        },
+        "target_graph": {
+          "node_count": 183,
+          "edge_count": 182,
+          "density": 0.00546448087431694,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 46,
+              "class": 41,
+              "external_dependency": 95
+            },
+            "edges": {
+              "contains": 87,
+              "imports": 97
+            }
+          }
+        },
+        "topology_similarity": 0.9137911831016943
+      },
+      "notes": [
+        "Graph topology reveals the structural organization of the codebase.",
+        "Higher density indicates more interconnected code components."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Dependency Analysis",
+      "content": {
+        "dependency_overlap": 0.08928571428571429,
+        "common_dependencies": [
+          "http",
+          "fs",
+          "console",
+          "child_process",
+          "os"
+        ],
+        "common_dependency_count": 5
+      },
+      "notes": [
+        "Dependency overlap of 8.93% indicates different technology choices.",
+        "Common dependencies suggest shared functionality or framework usage."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Code Pattern Analysis",
+      "content": {
+        "high_similarity_patterns": {
+          "count": 70,
+          "threshold": 0.9,
+          "matches": [
+            {
+              "source": "file-create-dir.test.js",
+              "target": "noLogFilter-test.js",
+              "similarity": 0.9942651391029358,
+              "type": "file"
+            },
+            {
+              "source": "stream.test.js",
+              "target": "newLevel-test.js",
+              "similarity": 0.9936904907226562,
+              "type": "file"
+            },
+            {
+              "source": "file-maxsize.js",
+              "target": "recordingAppender-test.js",
+              "similarity": 0.9935742616653442,
+              "type": "file"
+            },
+            {
+              "source": "simple-stream.js",
+              "target": "categoryFilter-test.js",
+              "similarity": 0.9933754801750183,
+              "type": "file"
+            },
+            {
+              "source": "custom-levels-colors.js",
+              "target": "date-file-rolling.js",
+              "similarity": 0.9932673573493958,
+              "type": "file"
+            },
+            {
+              "source": "jest.config.js",
+              "target": "flush-on-exit.js",
+              "similarity": 0.9928613305091858,
+              "type": "file"
+            },
+            {
+              "source": "rejection-handler.test.js",
+              "target": "sandbox-coverage.js",
+              "similarity": 0.9925188422203064,
+              "type": "file"
+            },
+            {
+              "source": "json.js",
+              "target": "passenger-test.js",
+              "similarity": 0.9924348592758179,
+              "type": "file"
+            },
+            {
+              "source": "quick-start.js",
+              "target": "patternLayout-tokens.js",
+              "similarity": 0.9919326901435852,
+              "type": "file"
+            },
+            {
+              "source": "handler-tests.js",
+              "target": "stdoutAppender-test.js",
+              "similarity": 0.9919018149375916,
+              "type": "file"
+            }
+          ]
+        },
+        "moderate_similarity_patterns": {
+          "count": 0,
+          "threshold_range": [
+            0.8,
+            0.9
+          ],
+          "matches": []
+        }
+      },
+      "notes": [
+        "Found 70 code elements with very high similarity (>=90%).",
+        "Found 0 code elements with high similarity (80-90%).",
+        "High similarity patterns may indicate shared code, common idioms, or similar implementations."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Methodology",
+      "content": {
+        "approach": "Hybrid structural and semantic analysis",
+        "pipeline_stages": [
+          "Repository Ingestion",
+          "Language Detection",
+          "Static Structure Extraction",
+          "Semantic Graph Construction",
+          "Embedding Generation",
+          "Similarity Analysis",
+          "Report Generation"
+        ],
+        "structural_analysis": {
+          "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+          "metrics": [
+            "Node type distribution similarity (cosine)",
+            "Edge type distribution similarity (cosine)",
+            "Dependency overlap (Jaccard index)",
+            "Topology metrics (density, clustering, depth)"
+          ],
+          "weights": {
+            "node_type": 0.25,
+            "edge_type": 0.2,
+            "dependency": 0.3,
+            "topology": 0.25
+          }
+        },
+        "semantic_analysis": {
+          "description": "Compares code meaning using neural embeddings",
+          "encoder": "microsoft/codebert-base",
+          "embedding_dimension": 768,
+          "granularity": [
+            "function",
+            "class",
+            "file"
+          ],
+          "matching": "Greedy optimal matching with threshold",
+          "similarity_threshold": 0.7,
+          "weights": {
+            "function": 0.5,
+            "class": 0.3,
+            "file": 0.2
+          }
+        },
+        "hybrid_combination": {
+          "description": "Weighted combination of structural and semantic scores",
+          "default_structural_weight": 0.4,
+          "default_semantic_weight": 0.6
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Limitations and Assumptions",
+      "content": {
+        "analysis_limitations": [
+          "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+        ],
+        "general_limitations": [
+          "Static analysis only - runtime behavior not considered",
+          "Variable-level data flow not tracked",
+          "Similarity is computed, not semantic equivalence",
+          "Cross-language comparison limited by embedding model training",
+          "Large repositories may have sampling limitations"
+        ],
+        "assumptions": [
+          "Code follows standard conventions for the language",
+          "File extensions correctly indicate language",
+          "Repository structure is representative of codebase organization",
+          "Function/class naming reflects purpose",
+          "Import statements reflect actual dependencies"
+        ],
+        "score_interpretation": {
+          "0.9_to_1.0": "Very High - Nearly identical codebases",
+          "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+          "0.5_to_0.75": "Moderate - Some common patterns",
+          "0.25_to_0.5": "Low - Few common elements",
+          "0.0_to_0.25": "Very Low - Largely different codebases"
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Recommendations",
+      "content": {
+        "recommendations": [
+          "Explore the common patterns for potential code reuse",
+          "Consider creating shared libraries for common functionality",
+          "Document architectural similarities for knowledge transfer",
+          "Significant difference between structural and semantic similarity - investigate organizational vs. implementation differences"
+        ],
+        "based_on": {
+          "overall_score": 0.5722104922729505,
+          "structural_score": 0.6954249381570796,
+          "semantic_score": 0.4900675283501978
+        }
+      },
+      "notes": [],
+      "subsections": []
+    }
+  ],
+  "methodology": {
+    "approach": "Hybrid structural and semantic analysis",
+    "pipeline_stages": [
+      "Repository Ingestion",
+      "Language Detection",
+      "Static Structure Extraction",
+      "Semantic Graph Construction",
+      "Embedding Generation",
+      "Similarity Analysis",
+      "Report Generation"
+    ],
+    "structural_analysis": {
+      "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+      "metrics": [
+        "Node type distribution similarity (cosine)",
+        "Edge type distribution similarity (cosine)",
+        "Dependency overlap (Jaccard index)",
+        "Topology metrics (density, clustering, depth)"
+      ],
+      "weights": {
+        "node_type": 0.25,
+        "edge_type": 0.2,
+        "dependency": 0.3,
+        "topology": 0.25
+      }
+    },
+    "semantic_analysis": {
+      "description": "Compares code meaning using neural embeddings",
+      "encoder": "microsoft/codebert-base",
+      "embedding_dimension": 768,
+      "granularity": [
+        "function",
+        "class",
+        "file"
+      ],
+      "matching": "Greedy optimal matching with threshold",
+      "similarity_threshold": 0.7,
+      "weights": {
+        "function": 0.5,
+        "class": 0.3,
+        "file": 0.2
+      }
+    },
+    "hybrid_combination": {
+      "description": "Weighted combination of structural and semantic scores",
+      "default_structural_weight": 0.4,
+      "default_semantic_weight": 0.6
+    }
+  },
+  "limitations": {
+    "analysis_limitations": [
+      "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+    ],
+    "general_limitations": [
+      "Static analysis only - runtime behavior not considered",
+      "Variable-level data flow not tracked",
+      "Similarity is computed, not semantic equivalence",
+      "Cross-language comparison limited by embedding model training",
+      "Large repositories may have sampling limitations"
+    ],
+    "assumptions": [
+      "Code follows standard conventions for the language",
+      "File extensions correctly indicate language",
+      "Repository structure is representative of codebase organization",
+      "Function/class naming reflects purpose",
+      "Import statements reflect actual dependencies"
+    ],
+    "score_interpretation": {
+      "0.9_to_1.0": "Very High - Nearly identical codebases",
+      "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+      "0.5_to_0.75": "Moderate - Some common patterns",
+      "0.25_to_0.5": "Low - Few common elements",
+      "0.0_to_0.25": "Very Low - Largely different codebases"
+    }
+  },
+  "raw_data": {
+    "summary": {
+      "overall_similarity": 0.5722104922729505,
+      "structural_similarity": 0.6954249381570796,
+      "semantic_similarity": 0.4900675283501978,
+      "interpretation": "Moderate Similarity - Some common patterns and components"
+    },
+    "metadata": {
+      "pipeline_stages": [
+        "ingestion",
+        "analysis",
+        "graph_construction",
+        "embedding",
+        "storage",
+        "similarity",
+        "reporting"
+      ],
+      "config": {
+        "structural_weight": 0.4,
+        "semantic_weight": 0.6
+      },
+      "analysis_timestamp": "2025-12-23T19:08:55.508422",
+      "engine_version": "1.0.0"
+    }
+  }
+}

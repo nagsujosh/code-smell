@@ -1,0 +1,376 @@
+
+====================================================================================================
+                               REPOSITORY SIMILARITY ANALYSIS REPORT
+                                Semantic Codebase Graph Engine v1.0
+====================================================================================================
+
+Report Generated: 2025-12-24 21:16:21 UTC
+Pipeline ID: 4f48e791
+Analysis Type: Repository Comparison
+
+====================================================================================================
+                                         EXECUTIVE SUMMARY
+====================================================================================================
+
+  OVERALL SIMILARITY SCORE: 0.5200 (52.00%)
+
+  Interpretation: Moderate Similarity - Some common patterns and components
+
+  Component Scores:
+    Structural Similarity: 1.0000 (100.00%)
+    Semantic Similarity:   0.2000 (20.00%)
+
+  Overall         [##########################........................]  52.00%
+  Structural      [##################################################] 100.00%
+  Semantic        [##########........................................]  20.00%
+
+----------------------------------------------------------------------------------------------------
+REPOSITORIES ANALYZED
+----------------------------------------------------------------------------------------------------
+
+  Source Repository: data/repos/rhea1
+  Target Repository: data/repos/rhea2
+
+----------------------------------------------------------------------------------------------------
+OVERVIEW
+----------------------------------------------------------------------------------------------------
+
+  Overall Score: 0.5200 (52.00%)
+  Interpretation: Moderate Similarity - Some common patterns and components
+  Computed At: 2025-12-24T21:16:21.862775
+  Source Repository: rhea1
+  Target Repository: rhea2
+  Weights:
+    Structural: 0.4000 (40.00%)
+    Semantic: 0.6000 (60.00%)
+  Score Formula: (0.40 * structural) + (0.60 * semantic)
+  Computed Score: (0.40 * 1.0000) + (0.60 * 0.2000) = 0.5200
+  Note: The overall similarity score of 52.00% is computed from structural similarity (100.00%) weighted at 40% and semantic similarity (20.00%) weighted at 60%. High dependency overlap (100.00%) suggests similar technology stacks. Highest semantic match: 'package-info.java' and 'package-info.java' (100.00%).
+
+
+----------------------------------------------------------------------------------------------------
+STRUCTURAL SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 1.0000 (100.00%)
+  Components:
+    Node Type Similarity: 1.0000 (100.00%)
+    Edge Type Similarity: 1.0000 (100.00%)
+    Dependency Overlap: 1.0000 (100.00%)
+    Topology Similarity: 1.0000 (100.00%)
+  Component Weights:
+    Node Type: 0.2500 (25.00%)
+    Edge Type: 0.2000 (20.00%)
+    Dependency: 0.3000 (30.00%)
+    Topology: 0.2500 (25.00%)
+  Size Ratio: 1.0000 (100.00%)
+  Graph Comparison:
+    Source Nodes: 2
+    Source Edges: 1
+    Target Nodes: 2
+    Target Edges: 1
+  Note: Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.
+  Note: Size ratio of 100.00% indicates similar repository sizes.
+
+
+  Common Dependencies
+  -------------------
+
+    Dependencies: (0 items)
+    Count: 0
+
+
+  Node Type Distribution
+  ----------------------
+
+    Common Types: (2 items)
+      - file
+      - repository
+    Source Distribution:
+      Repository: 1
+      File: 1
+    Target Distribution:
+      Repository: 1
+      File: 1
+
+
+  Edge Type Distribution
+  ----------------------
+
+    Common Types: (1 items)
+      - contains
+    Source Distribution:
+      Contains: 1
+    Target Distribution:
+      Contains: 1
+
+
+----------------------------------------------------------------------------------------------------
+SEMANTIC SIMILARITY
+----------------------------------------------------------------------------------------------------
+
+  Score: 0.2000 (20.00%)
+  Components:
+    Function Similarity: 0.0000 (0.00%)
+    Class Similarity: 0.0000 (0.00%)
+    File Similarity: 1.0000 (100.00%)
+  Component Weights:
+    Function: 0.5000 (50.00%)
+    Class: 0.3000 (30.00%)
+    File: 0.2000 (20.00%)
+  Total Matches: 1
+  Matches By Type:
+    Function Matches: 0
+    Class Matches: 0
+    File Matches: 1
+  Entity Counts:
+    Source Functions: 0
+    Target Functions: 0
+    Source Classes: 0
+    Target Classes: 0
+  Note: Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).
+  Note: Aggregation method: weighted_average
+  Note: Total matched pairs above threshold: 1
+
+
+  Top Function Matches
+  --------------------
+
+    Matches: (0 items)
+
+
+  Top Class Matches
+  -----------------
+
+    Matches: (0 items)
+
+
+  Top File Matches
+  ----------------
+
+    Matches: (1 items)
+      [1] source: package-info.java, target: package-info.java, similarity: 1.0000
+
+
+  All Top Semantic Matches
+  ------------------------
+
+    Matches: (1 items)
+      [1] source: package-info.java, target: package-info.java, similarity: 1.0000, type: file
+
+
+----------------------------------------------------------------------------------------------------
+REPOSITORY STATISTICS
+----------------------------------------------------------------------------------------------------
+
+  Source:
+    Name: rhea1
+    Files: 376
+    Size Bytes: 7026829
+    Size Mb: 6.7000
+    Languages:
+      Groovy: 4
+      Java: 228
+      Sql: 3
+    Primary Language: java
+    Nodes: 2
+    Edges: 1
+    Node Types: (2 items)
+      - file
+      - repository
+    Edge Types: (1 items)
+      - contains
+  Target:
+    Name: rhea2
+    Files: 274
+    Size Bytes: 6349665
+    Size Mb: 6.0600
+    Languages:
+      Groovy: 4
+      Java: 166
+      Sql: 3
+    Primary Language: java
+    Nodes: 2
+    Edges: 1
+    Node Types: (2 items)
+      - file
+      - repository
+    Edge Types: (1 items)
+      - contains
+  Comparison:
+    File Ratio: 0.7287 (72.87%)
+    Node Ratio: 1.0000 (100.00%)
+
+----------------------------------------------------------------------------------------------------
+GRAPH TOPOLOGY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Source Graph:
+    Node Count: 2
+    Edge Count: 1
+    Density: 0.5000 (50.00%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 1
+      Edges:
+        Contains: 1
+  Target Graph:
+    Node Count: 2
+    Edge Count: 1
+    Density: 0.5000 (50.00%)
+    Type Distribution:
+      Nodes:
+        Repository: 1
+        File: 1
+      Edges:
+        Contains: 1
+  Topology Similarity: 1.0000 (100.00%)
+  Note: Graph topology reveals the structural organization of the codebase.
+  Note: Higher density indicates more interconnected code components.
+
+
+----------------------------------------------------------------------------------------------------
+DEPENDENCY ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  Dependency Overlap: 1.0000 (100.00%)
+  Common Dependencies: (0 items)
+  Common Dependency Count: 0
+  Note: Dependency overlap of 100.00% indicates similar technology stacks.
+  Note: Common dependencies suggest shared functionality or framework usage.
+
+
+----------------------------------------------------------------------------------------------------
+CODE PATTERN ANALYSIS
+----------------------------------------------------------------------------------------------------
+
+  High Similarity Patterns:
+    Count: 1
+    Threshold: 0.9000 (90.00%)
+    Matches: (1 items)
+      [1] source: package-info.java, target: package-info.java, similarity: 1.0000, type: file
+  Moderate Similarity Patterns:
+    Count: 0
+    Threshold Range: (2 items)
+      - 0.8
+      - 0.9
+    Matches: (0 items)
+  Note: Found 1 code elements with very high similarity (>=90%).
+  Note: Found 0 code elements with high similarity (80-90%).
+  Note: High similarity patterns may indicate shared code, common idioms, or similar implementations.
+
+
+----------------------------------------------------------------------------------------------------
+METHODOLOGY
+----------------------------------------------------------------------------------------------------
+
+  Approach: Hybrid structural and semantic analysis
+  Pipeline Stages: (7 items)
+    - Repository Ingestion
+    - Language Detection
+    - Static Structure Extraction
+    - Semantic Graph Construction
+    - Embedding Generation
+    - Similarity Analysis
+    - Report Generation
+  Structural Analysis:
+    Description: Compares graph topology, node/edge distributions, and dependency overlap
+    Metrics: (4 items)
+      - Node type distribution similarity (cosine)
+      - Edge type distribution similarity (cosine)
+      - Dependency overlap (Jaccard index)
+      - Topology metrics (density, clustering, depth)
+    Weights:
+      Node Type: 0.2500 (25.00%)
+      Edge Type: 0.2000 (20.00%)
+      Dependency: 0.3000 (30.00%)
+      Topology: 0.2500 (25.00%)
+  Semantic Analysis:
+    Description: Compares code meaning using neural embeddings
+    Encoder: microsoft/codebert-base
+    Embedding Dimension: 768
+    Granularity: (3 items)
+      - function
+      - class
+      - file
+    Matching: Greedy optimal matching with threshold
+    Similarity Threshold: 0.7000 (70.00%)
+    Weights:
+      Function: 0.5000 (50.00%)
+      Class: 0.3000 (30.00%)
+      File: 0.2000 (20.00%)
+  Hybrid Combination:
+    Description: Weighted combination of structural and semantic scores
+    Default Structural Weight: 0.4000 (40.00%)
+    Default Semantic Weight: 0.6000 (60.00%)
+
+----------------------------------------------------------------------------------------------------
+LIMITATIONS AND ASSUMPTIONS
+----------------------------------------------------------------------------------------------------
+
+  Analysis Limitations: (3 items)
+    - Few entities have embeddings, semantic similarity may be less reliable.
+    - Small repository size limits the reliability of structural analysis.
+    - This analysis is based on static structure and semantics only; runtime behavior is not considered.
+  General Limitations: (5 items)
+    - Static analysis only - runtime behavior not considered
+    - Variable-level data flow not tracked
+    - Similarity is computed, not semantic equivalence
+    - Cross-language comparison limited by embedding model training
+    - Large repositories may have sampling limitations
+  Assumptions: (5 items)
+    - Code follows standard conventions for the language
+    - File extensions correctly indicate language
+    - Repository structure is representative of codebase organization
+    - Function/class naming reflects purpose
+    - Import statements reflect actual dependencies
+  Score Interpretation:
+    0.9 To 1.0: Very High - Nearly identical codebases
+    0.75 To 0.9: High - Significant overlap, possibly related projects
+    0.5 To 0.75: Moderate - Some common patterns
+    0.25 To 0.5: Low - Few common elements
+    0.0 To 0.25: Very Low - Largely different codebases
+
+----------------------------------------------------------------------------------------------------
+RECOMMENDATIONS
+----------------------------------------------------------------------------------------------------
+
+  Recommendations: (5 items)
+    - Explore the common patterns for potential code reuse
+    - Consider creating shared libraries for common functionality
+    - Document architectural similarities for knowledge transfer
+    - High dependency overlap - consider standardizing dependency versions
+    - Significant difference between structural and semantic similarity - investigate organizational vs. implementation differences
+  Based On:
+    Overall Score: 0.5200 (52.00%)
+    Structural Score: 1.0000 (100.00%)
+    Semantic Score: 0.2000 (20.00%)
+
+----------------------------------------------------------------------------------------------------
+INTERPRETATION AND KEY INSIGHTS
+----------------------------------------------------------------------------------------------------
+
+  Score Analysis:
+  ----------------------------------------
+  - The repositories show MODERATE similarity
+    This suggests:
+      * Some shared patterns or conventions
+      * Similar technology stack in some areas
+      * Different approaches with some overlap
+
+  Component Analysis:
+  ----------------------------------------
+  - Structural similarity EXCEEDS semantic similarity
+    Implication: Similar organization/architecture but
+    different implementation details or naming conventions
+
+====================================================================================================
+                                           END OF REPORT
+====================================================================================================
+
+This report was generated by the Semantic Codebase Graph Engine.
+For more information, see the project documentation.
+
+Report ID: 4f48e791
+Generated: 2025-12-24 21:16:21

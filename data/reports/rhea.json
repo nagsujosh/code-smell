@@ -1,0 +1,662 @@
+{
+  "report_info": {
+    "title": "Repository Similarity Analysis Report",
+    "version": "1.0.0",
+    "schema_version": "v1",
+    "generated_at": "2025-12-24T21:16:21.862848",
+    "pipeline_id": "4f48e791",
+    "format": "extensive_json"
+  },
+  "repositories": {
+    "source": "data/repos/rhea1",
+    "target": "data/repos/rhea2"
+  },
+  "executive_summary": {
+    "overall_similarity": {
+      "score": 0.52,
+      "percentage": "52.00%",
+      "interpretation": "Moderate Similarity - Some common patterns and components"
+    },
+    "component_scores": {
+      "structural": {
+        "score": 1.0,
+        "percentage": "100.00%"
+      },
+      "semantic": {
+        "score": 0.2,
+        "percentage": "20.00%"
+      }
+    },
+    "key_findings": [
+      "Moderate similarity suggests some shared patterns and structures",
+      "Structural similarity exceeds semantic similarity - similar organization but different implementations"
+    ]
+  },
+  "scores": {
+    "overall": {
+      "value": 0.52,
+      "normalized": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    },
+    "structural": {
+      "value": 1.0,
+      "components": {
+        "node_type_similarity": 0.9999999999999998,
+        "edge_type_similarity": 1.0,
+        "dependency_overlap": 1.0,
+        "topology_similarity": 1.0
+      },
+      "size_ratio": 1.0
+    },
+    "semantic": {
+      "value": 0.2,
+      "components": {
+        "function_similarity": 0.0,
+        "class_similarity": 0.0,
+        "file_similarity": 1.0
+      },
+      "total_matches": 1
+    }
+  },
+  "analysis_breakdown": {
+    "structural_analysis": {
+      "score": 1.0,
+      "components": {
+        "node_type_similarity": 0.9999999999999998,
+        "edge_type_similarity": 1.0,
+        "dependency_overlap": 1.0,
+        "topology_similarity": 1.0
+      },
+      "size_ratio": 1.0,
+      "common_dependencies": [],
+      "common_node_types": [
+        "file",
+        "repository"
+      ],
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 100.00% indicates similar repository sizes."
+      ]
+    },
+    "semantic_analysis": {
+      "score": 0.2,
+      "components": {
+        "function_similarity": 0.0,
+        "class_similarity": 0.0,
+        "file_similarity": 1.0
+      },
+      "total_matches": 1,
+      "top_matches": [],
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 1"
+      ]
+    },
+    "repository_comparison": {
+      "source": {
+        "name": "rhea1",
+        "files": 376,
+        "size_bytes": 7026829,
+        "size_mb": 6.7,
+        "languages": {
+          "groovy": 4,
+          "java": 228,
+          "sql": 3
+        },
+        "primary_language": "java",
+        "nodes": 2,
+        "edges": 1,
+        "node_types": [
+          "file",
+          "repository"
+        ],
+        "edge_types": [
+          "contains"
+        ]
+      },
+      "target": {
+        "name": "rhea2",
+        "files": 274,
+        "size_bytes": 6349665,
+        "size_mb": 6.06,
+        "languages": {
+          "groovy": 4,
+          "java": 166,
+          "sql": 3
+        },
+        "primary_language": "java",
+        "nodes": 2,
+        "edges": 1,
+        "node_types": [
+          "file",
+          "repository"
+        ],
+        "edge_types": [
+          "contains"
+        ]
+      },
+      "comparison": {
+        "file_ratio": 0.7287234042553191,
+        "node_ratio": 1.0
+      }
+    }
+  },
+  "detailed_sections": [
+    {
+      "title": "Overview",
+      "content": {
+        "overall_score": 0.52,
+        "interpretation": "Moderate Similarity - Some common patterns and components",
+        "computed_at": "2025-12-24T21:16:21.862775",
+        "source_repository": "rhea1",
+        "target_repository": "rhea2",
+        "weights": {
+          "structural": 0.4,
+          "semantic": 0.6
+        },
+        "score_formula": "(0.40 * structural) + (0.60 * semantic)",
+        "computed_score": "(0.40 * 1.0000) + (0.60 * 0.2000) = 0.5200"
+      },
+      "notes": [
+        "The overall similarity score of 52.00% is computed from structural similarity (100.00%) weighted at 40% and semantic similarity (20.00%) weighted at 60%. High dependency overlap (100.00%) suggests similar technology stacks. Highest semantic match: 'package-info.java' and 'package-info.java' (100.00%)."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Structural Similarity",
+      "content": {
+        "score": 1.0,
+        "components": {
+          "node_type_similarity": 0.9999999999999998,
+          "edge_type_similarity": 1.0,
+          "dependency_overlap": 1.0,
+          "topology_similarity": 1.0
+        },
+        "component_weights": {
+          "node_type": 0.25,
+          "edge_type": 0.2,
+          "dependency": 0.3,
+          "topology": 0.25
+        },
+        "size_ratio": 1.0,
+        "graph_comparison": {
+          "source_nodes": 2,
+          "source_edges": 1,
+          "target_nodes": 2,
+          "target_edges": 1
+        }
+      },
+      "notes": [
+        "Structural similarity measures how alike the codebases are in terms of organization, dependencies, and graph topology.",
+        "Size ratio of 100.00% indicates similar repository sizes."
+      ],
+      "subsections": [
+        {
+          "title": "Common Dependencies",
+          "content": {
+            "dependencies": [],
+            "count": 0
+          },
+          "notes": []
+        },
+        {
+          "title": "Node Type Distribution",
+          "content": {
+            "common_types": [
+              "file",
+              "repository"
+            ],
+            "source_distribution": {
+              "repository": 1,
+              "file": 1
+            },
+            "target_distribution": {
+              "repository": 1,
+              "file": 1
+            }
+          },
+          "notes": []
+        },
+        {
+          "title": "Edge Type Distribution",
+          "content": {
+            "common_types": [
+              "contains"
+            ],
+            "source_distribution": {
+              "contains": 1
+            },
+            "target_distribution": {
+              "contains": 1
+            }
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Semantic Similarity",
+      "content": {
+        "score": 0.2,
+        "components": {
+          "function_similarity": 0.0,
+          "class_similarity": 0.0,
+          "file_similarity": 1.0
+        },
+        "component_weights": {
+          "function": 0.5,
+          "class": 0.3,
+          "file": 0.2
+        },
+        "total_matches": 1,
+        "matches_by_type": {
+          "function_matches": 0,
+          "class_matches": 0,
+          "file_matches": 1
+        },
+        "entity_counts": {
+          "source_functions": 0,
+          "target_functions": 0,
+          "source_classes": 0,
+          "target_classes": 0
+        }
+      },
+      "notes": [
+        "Semantic similarity measures conceptual similarity based on code meaning using neural embeddings (CodeBERT).",
+        "Aggregation method: weighted_average",
+        "Total matched pairs above threshold: 1"
+      ],
+      "subsections": [
+        {
+          "title": "Top Function Matches",
+          "content": {
+            "matches": []
+          },
+          "notes": []
+        },
+        {
+          "title": "Top Class Matches",
+          "content": {
+            "matches": []
+          },
+          "notes": []
+        },
+        {
+          "title": "Top File Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "package-info.java",
+                "target": "package-info.java",
+                "similarity": 1.0
+              }
+            ]
+          },
+          "notes": []
+        },
+        {
+          "title": "All Top Semantic Matches",
+          "content": {
+            "matches": [
+              {
+                "source": "package-info.java",
+                "target": "package-info.java",
+                "similarity": 1.0,
+                "type": "file"
+              }
+            ]
+          },
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Repository Statistics",
+      "content": {
+        "source": {
+          "name": "rhea1",
+          "files": 376,
+          "size_bytes": 7026829,
+          "size_mb": 6.7,
+          "languages": {
+            "groovy": 4,
+            "java": 228,
+            "sql": 3
+          },
+          "primary_language": "java",
+          "nodes": 2,
+          "edges": 1,
+          "node_types": [
+            "file",
+            "repository"
+          ],
+          "edge_types": [
+            "contains"
+          ]
+        },
+        "target": {
+          "name": "rhea2",
+          "files": 274,
+          "size_bytes": 6349665,
+          "size_mb": 6.06,
+          "languages": {
+            "groovy": 4,
+            "java": 166,
+            "sql": 3
+          },
+          "primary_language": "java",
+          "nodes": 2,
+          "edges": 1,
+          "node_types": [
+            "file",
+            "repository"
+          ],
+          "edge_types": [
+            "contains"
+          ]
+        },
+        "comparison": {
+          "file_ratio": 0.7287234042553191,
+          "node_ratio": 1.0
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Graph Topology Analysis",
+      "content": {
+        "source_graph": {
+          "node_count": 2,
+          "edge_count": 1,
+          "density": 0.5,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 1
+            },
+            "edges": {
+              "contains": 1
+            }
+          }
+        },
+        "target_graph": {
+          "node_count": 2,
+          "edge_count": 1,
+          "density": 0.5,
+          "type_distribution": {
+            "nodes": {
+              "repository": 1,
+              "file": 1
+            },
+            "edges": {
+              "contains": 1
+            }
+          }
+        },
+        "topology_similarity": 1.0
+      },
+      "notes": [
+        "Graph topology reveals the structural organization of the codebase.",
+        "Higher density indicates more interconnected code components."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Dependency Analysis",
+      "content": {
+        "dependency_overlap": 1.0,
+        "common_dependencies": [],
+        "common_dependency_count": 0
+      },
+      "notes": [
+        "Dependency overlap of 100.00% indicates similar technology stacks.",
+        "Common dependencies suggest shared functionality or framework usage."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Code Pattern Analysis",
+      "content": {
+        "high_similarity_patterns": {
+          "count": 1,
+          "threshold": 0.9,
+          "matches": [
+            {
+              "source": "package-info.java",
+              "target": "package-info.java",
+              "similarity": 1.0,
+              "type": "file"
+            }
+          ]
+        },
+        "moderate_similarity_patterns": {
+          "count": 0,
+          "threshold_range": [
+            0.8,
+            0.9
+          ],
+          "matches": []
+        }
+      },
+      "notes": [
+        "Found 1 code elements with very high similarity (>=90%).",
+        "Found 0 code elements with high similarity (80-90%).",
+        "High similarity patterns may indicate shared code, common idioms, or similar implementations."
+      ],
+      "subsections": []
+    },
+    {
+      "title": "Methodology",
+      "content": {
+        "approach": "Hybrid structural and semantic analysis",
+        "pipeline_stages": [
+          "Repository Ingestion",
+          "Language Detection",
+          "Static Structure Extraction",
+          "Semantic Graph Construction",
+          "Embedding Generation",
+          "Similarity Analysis",
+          "Report Generation"
+        ],
+        "structural_analysis": {
+          "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+          "metrics": [
+            "Node type distribution similarity (cosine)",
+            "Edge type distribution similarity (cosine)",
+            "Dependency overlap (Jaccard index)",
+            "Topology metrics (density, clustering, depth)"
+          ],
+          "weights": {
+            "node_type": 0.25,
+            "edge_type": 0.2,
+            "dependency": 0.3,
+            "topology": 0.25
+          }
+        },
+        "semantic_analysis": {
+          "description": "Compares code meaning using neural embeddings",
+          "encoder": "microsoft/codebert-base",
+          "embedding_dimension": 768,
+          "granularity": [
+            "function",
+            "class",
+            "file"
+          ],
+          "matching": "Greedy optimal matching with threshold",
+          "similarity_threshold": 0.7,
+          "weights": {
+            "function": 0.5,
+            "class": 0.3,
+            "file": 0.2
+          }
+        },
+        "hybrid_combination": {
+          "description": "Weighted combination of structural and semantic scores",
+          "default_structural_weight": 0.4,
+          "default_semantic_weight": 0.6
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Limitations and Assumptions",
+      "content": {
+        "analysis_limitations": [
+          "Few entities have embeddings, semantic similarity may be less reliable.",
+          "Small repository size limits the reliability of structural analysis.",
+          "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+        ],
+        "general_limitations": [
+          "Static analysis only - runtime behavior not considered",
+          "Variable-level data flow not tracked",
+          "Similarity is computed, not semantic equivalence",
+          "Cross-language comparison limited by embedding model training",
+          "Large repositories may have sampling limitations"
+        ],
+        "assumptions": [
+          "Code follows standard conventions for the language",
+          "File extensions correctly indicate language",
+          "Repository structure is representative of codebase organization",
+          "Function/class naming reflects purpose",
+          "Import statements reflect actual dependencies"
+        ],
+        "score_interpretation": {
+          "0.9_to_1.0": "Very High - Nearly identical codebases",
+          "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+          "0.5_to_0.75": "Moderate - Some common patterns",
+          "0.25_to_0.5": "Low - Few common elements",
+          "0.0_to_0.25": "Very Low - Largely different codebases"
+        }
+      },
+      "notes": [],
+      "subsections": []
+    },
+    {
+      "title": "Recommendations",
+      "content": {
+        "recommendations": [
+          "Explore the common patterns for potential code reuse",
+          "Consider creating shared libraries for common functionality",
+          "Document architectural similarities for knowledge transfer",
+          "High dependency overlap - consider standardizing dependency versions",
+          "Significant difference between structural and semantic similarity - investigate organizational vs. implementation differences"
+        ],
+        "based_on": {
+          "overall_score": 0.52,
+          "structural_score": 1.0,
+          "semantic_score": 0.2
+        }
+      },
+      "notes": [],
+      "subsections": []
+    }
+  ],
+  "methodology": {
+    "approach": "Hybrid structural and semantic analysis",
+    "pipeline_stages": [
+      "Repository Ingestion",
+      "Language Detection",
+      "Static Structure Extraction",
+      "Semantic Graph Construction",
+      "Embedding Generation",
+      "Similarity Analysis",
+      "Report Generation"
+    ],
+    "structural_analysis": {
+      "description": "Compares graph topology, node/edge distributions, and dependency overlap",
+      "metrics": [
+        "Node type distribution similarity (cosine)",
+        "Edge type distribution similarity (cosine)",
+        "Dependency overlap (Jaccard index)",
+        "Topology metrics (density, clustering, depth)"
+      ],
+      "weights": {
+        "node_type": 0.25,
+        "edge_type": 0.2,
+        "dependency": 0.3,
+        "topology": 0.25
+      }
+    },
+    "semantic_analysis": {
+      "description": "Compares code meaning using neural embeddings",
+      "encoder": "microsoft/codebert-base",
+      "embedding_dimension": 768,
+      "granularity": [
+        "function",
+        "class",
+        "file"
+      ],
+      "matching": "Greedy optimal matching with threshold",
+      "similarity_threshold": 0.7,
+      "weights": {
+        "function": 0.5,
+        "class": 0.3,
+        "file": 0.2
+      }
+    },
+    "hybrid_combination": {
+      "description": "Weighted combination of structural and semantic scores",
+      "default_structural_weight": 0.4,
+      "default_semantic_weight": 0.6
+    }
+  },
+  "limitations": {
+    "analysis_limitations": [
+      "Few entities have embeddings, semantic similarity may be less reliable.",
+      "Small repository size limits the reliability of structural analysis.",
+      "This analysis is based on static structure and semantics only; runtime behavior is not considered."
+    ],
+    "general_limitations": [
+      "Static analysis only - runtime behavior not considered",
+      "Variable-level data flow not tracked",
+      "Similarity is computed, not semantic equivalence",
+      "Cross-language comparison limited by embedding model training",
+      "Large repositories may have sampling limitations"
+    ],
+    "assumptions": [
+      "Code follows standard conventions for the language",
+      "File extensions correctly indicate language",
+      "Repository structure is representative of codebase organization",
+      "Function/class naming reflects purpose",
+      "Import statements reflect actual dependencies"
+    ],
+    "score_interpretation": {
+      "0.9_to_1.0": "Very High - Nearly identical codebases",
+      "0.75_to_0.9": "High - Significant overlap, possibly related projects",
+      "0.5_to_0.75": "Moderate - Some common patterns",
+      "0.25_to_0.5": "Low - Few common elements",
+      "0.0_to_0.25": "Very Low - Largely different codebases"
+    }
+  },
+  "raw_data": {
+    "summary": {
+      "overall_similarity": 0.52,
+      "structural_similarity": 1.0,
+      "semantic_similarity": 0.2,
+      "interpretation": "Moderate Similarity - Some common patterns and components"
+    },
+    "metadata": {
+      "pipeline_stages": [
+        "ingestion",
+        "analysis",
+        "graph_construction",
+        "embedding",
+        "storage",
+        "similarity",
+        "reporting"
+      ],
+      "config": {
+        "structural_weight": 0.4,
+        "semantic_weight": 0.6
+      },
+      "analysis_timestamp": "2025-12-24T21:16:21.862906",
+      "engine_version": "1.0.0"
+    }
+  }
+}
